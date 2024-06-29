@@ -201,6 +201,21 @@ h6 {
   background: #1e81b0;
 }
 
+.navbar .getstarted2,
+.navbar .getstarted2:focus {
+  background: #47705E;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.navbar .getstarted2:hover,
+.navbar .getstarted2:focus:hover {
+  color: #fff;
+  background: #1e81b0;
+
+}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -776,7 +791,7 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #ed502e;
+  color: #1e81b0;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -803,7 +818,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color: #ed502e;
+  color: #1e81b0;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -1226,7 +1241,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #ed502e;
+  color: #1e81b0;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1273,7 +1288,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #ed502e;
+  color: #1e81b0;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1299,7 +1314,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #f59f8c;
+  color: #1e81b0;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
