@@ -470,7 +470,7 @@ h6 {
   height: auto;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  transition: 2.5s;
+  transition: 25s;
   color: rgba(255, 255, 255, 0.5);
   width: 54px;
   height: 54px;
@@ -721,7 +721,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #123a6d;
+  color: #1E4133;
 }
 
 .why-us .content h4 {
@@ -1059,8 +1059,8 @@ section {
 }
 
 .services .icon-box2:hover {
-  background: #A0A3A2;
-  border-color: #A0A3A2;
+  background: #686D6B;
+  border-color: #686D6B;
 }
 
 .services .icon-box2:hover .iconb {
