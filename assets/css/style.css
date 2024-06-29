@@ -165,7 +165,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #0b2341;
+  color: #1E4133;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -513,7 +513,7 @@ h6 {
   line-height: 1;
   color: #fff;
   animation-delay: 0.8s;
-  background: #ed502e;
+  background: #1E4133;
   margin-top: 15px;
 }
 
