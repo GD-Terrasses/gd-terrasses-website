@@ -183,12 +183,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #9c6434;
+  color: #1e81b0;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #9a5a2f;
+  background: #bc844b;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -198,7 +198,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #dbab84;
+  background: #1e81b0;
 }
 
 .navbar .dropdown ul {
@@ -470,7 +470,7 @@ h6 {
   height: auto;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  transition: 0.3s;
+  transition: 2.5s;
   color: rgba(255, 255, 255, 0.5);
   width: 54px;
   height: 54px;
@@ -520,7 +520,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #ef6445;
+  background: #1e81b0;
 }
 
 @media (max-width: 992px) {
@@ -597,7 +597,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0f2f57;
+  color: #1E4133;
 }
 
 /*--------------------------------------------------------------
