@@ -186,7 +186,7 @@ h6 {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #ed502e;
+  background: #9a5a2f;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -196,7 +196,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #ef6445;
+  background: #dbab84;
 }
 
 .navbar .dropdown ul {
