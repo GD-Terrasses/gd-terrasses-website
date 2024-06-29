@@ -975,8 +975,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1E4133;
-  border-color: #1E4133;
+  background: #47705E;
+  border-color: #47705E;
 }
 
 .services .icon-box:hover .icon {
@@ -984,11 +984,11 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1E4133;
+  color: #47705E;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #47705E;
+  background: #1E4133;
 }
 
 .services .icon-box:hover h4 a,
@@ -1073,11 +1073,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ed502e;
+  border: 1px solid #1e81b0;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ed502e;
+  background-color: #1e81b0;
 }
 
 /*--------------------------------------------------------------
@@ -1085,7 +1085,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 80px 0;
-  background: #0b2341;
+  background: #47705E;
 }
 
 .cta h3 {
@@ -1108,13 +1108,13 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #ed502e;
+  border: 2px solid #FFFFFF;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #ed502e;
-  border: 2px solid #ed502e;
+  background: #1e81b0;
+  border: 2px solid #1e81b0;
 }
 
 /*--------------------------------------------------------------
@@ -1538,10 +1538,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #ed502e;
+  color: #1e81b0;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #fbdad2;
+  border: 2px dotted #1e81b0;
 }
 
 .contact .info-box h3 {
@@ -1627,7 +1627,9 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ed502e;
+  background: #bc844b
+
+;
   border: 0;
   padding: 10px 30px;
   border-radius: 4px;
@@ -1636,7 +1638,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ef6445;
+  background: #1e81b0;
 }
 
 @keyframes animate-loading {
