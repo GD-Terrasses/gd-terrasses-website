@@ -354,6 +354,10 @@ h6 {
   margin: 15px;
 }
 
+.navbar-mobile .getstarted2,
+.navbar-mobile .getstarted2:focus {
+  margin: 15px;
+}
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -447,9 +451,8 @@ h6 {
   animation-delay: 0.5s;
   color: #fff;
   margin: 0;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
-  margin-top: 10px;
   word-spacing: 10px;
   display: inline-block;
   padding-right: 20px;
@@ -459,9 +462,8 @@ h6 {
   animation-delay: 1.5s;
   color: #fff;
   margin: 0;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
-  margin-top: 10px;
   word-spacing: 10px;
   display: inline-block;
   padding-right: 20px;
@@ -471,9 +473,19 @@ h6 {
   animation-delay: 2.5s;
   color: #fff;
   margin: 0;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
-  margin-top: 10px;
+  word-spacing: 10px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+#hero h2d {
+  animation-delay: 6s;
+  color: #fff;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
   word-spacing: 10px;
   display: inline-block;
   padding-right: 20px;
@@ -482,12 +494,18 @@ h6 {
 
 
 
-
-
 #hero p {
   animation-delay: 0.4s;
   color: #fff;
   margin-top: 10px;
+}
+
+#hero p2 {
+  animation-delay: 0.4s;
+  color: #fff;
+  margin-top: 10px;
+  max-width: 400px; /* You can adjust this value to your needs */
+    
 }
 
 @media (min-width: 1200px) {
@@ -595,7 +613,7 @@ h6 {
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  animation-delay: 4s;
+  animation-delay: 6s;
   background: #1E4133;
   margin-top: 15px;
 }
@@ -754,7 +772,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #ed502e;
+  color: #47705E;
   float: left;
 }
 
@@ -763,7 +781,7 @@ section {
   line-height: 24px;
   display: block;
   font-weight: 700;
-  color: #0b2341;
+  color: #1e81b0;
   margin-left: 50px;
 }
 
