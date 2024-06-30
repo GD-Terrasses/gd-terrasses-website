@@ -72,7 +72,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" data-bs-interval="8000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
@@ -93,9 +93,33 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/ipe.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Création. Rénovation. Entretien.</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire la suite</a>
+    <style>
+        .fade-text {
+            opacity: 0;
+            animation: fadeInOut 4s forwards; /* Adjust the duration as needed */
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+				<h2c class="animate__animated animate__fadeInDown fade-text">CREATION. </h2c> 
+					<h2a class="animate__animated animate__fadeInDown fade-text">RENOVATION. </h2a> 
+					<h2b class="animate__animated animate__fadeInDown fade-text">ENTRETIEN. </h2b>
+				<br>
+				
+   
+ 
+				
+			<a href="#services" class="btn-get-started2 animate__animated animate__fadeInUp scrollto">Lire la suite</a>
             </div>
           </div>
         </div>
@@ -215,14 +239,14 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url(assets/img/portfolio/close.jpg);" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
             <div class="content">
-              <h3>Pourquoi GD Terrasses?</h3>
+              <h3><strong>Pourquoi GD Terrasses?</strong></h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
@@ -287,7 +311,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-paint-bucket"></i></div>
+              <div class="icon"><i class="bi bi-hammer"></i></div>
               <h4><a href="">Rénovation</a></h4>
               <p>Si vous cherchez à redonner vie à votre terrasse, ne cherchez plus. Nos rénovations comprennent le renforcement de votre terrasse si nécessaire, par des améliorations ou des réparation, ainsi que la fourniture de finitions durables et de haute qualité.&nbsp; &nbsp;</p>
             </div>
@@ -295,7 +319,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-tools"></i></div>
+              <div class="icon"><i class="bi bi-paint-bucket"></i></div>
               <h4><a href="">Entretien&nbsp;</a></h4>
               <p>La plupart des structures en bois nécessitent des soins et de l'attention au fil des années. Nous pouvons assurer l'entretien et la maintenance de vos nouvelles terrasses ainsi que de vos projets précédemment réalisés. Contactez-nous et laissez-nous vous aider à préserver la qualité, l'apparence et la fonctionnalité de vos espaces extérieurs.</p>
             </div>
@@ -797,8 +821,10 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>GD Terrasses&nbsp;</h3>
-              <p class="pb-3"><em>'In wood we trust'</em></p>
+             
+				<p><img src="assets/img/Logo Graphics/1x/LOGO LIGHT 1.png" class="footer-image"></p>
+              <p> </p>
+				 <br>
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
