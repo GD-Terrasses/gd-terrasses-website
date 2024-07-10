@@ -185,10 +185,6 @@ h3,
 h4,
 h5,
 h6,
-h2a,
-h2b,
-h2c,
-h2d,
 span2{
   font-family: "Inter", sans-serif;
 }
@@ -669,42 +665,6 @@ span2{
   font-weight: 700;
  
 }
-
-#hero h2a {
-  animation-delay: 1.5s;
-  color: #fff;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  word-spacing: 10px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-#hero h2b {
-  animation-delay: 2.5s;
-  color: #fff;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  word-spacing: 10px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-#hero h2d {
-  animation-delay: 6s;
-  color: #fff;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  word-spacing: 10px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-
-
 
 #hero p {
   animation-delay: 0.4s;
