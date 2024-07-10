@@ -571,7 +571,7 @@ span2{
     justify-content: left;
     align-items: left;
     opacity: 0;
-    animation: fadeOutIn 4s;
+    animation: fadeOutIn 4.5s;
 }
 
 #hero .text:nth-child(1) {
