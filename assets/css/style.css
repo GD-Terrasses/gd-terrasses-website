@@ -605,13 +605,35 @@ span2{
   left: 0;
   bottom: 0;
 }
+#hero .carousel-container h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}	
+#hero .logo-image {
+  height: 3em; /* Adjust the height as needed */
+  vertical-align: middle; /* Ensure it aligns vertically with the text */
+  margin-right: 0; /* Add some space between the logo and the text */
 
-#hero .carousel-logo {
-    text-align: left;
-    max-width: 120px; /* You can adjust this value to your needs */
-    margin: 0 auto;
 }
 
+#hero h1 span2 {
+  font-size: 6vw; /* Adjust this value as needed for responsiveness */
+}
+
+p {
+  font-size: 4vw; /* Adjust this value as needed for responsiveness */
+}
+
+@media (min-width: 600px) {
+  #hero h1 span2 {
+    font-size: 60px; /* Default size for larger screens */
+  }
+  p {
+    font-size: 16px; /* Default size for larger screens */
+  }
+	
+}
 #hero .carousel-item {
   background-size: cover;
   background-position: top center;
@@ -633,6 +655,29 @@ span2{
   right: 50px;
 }
 
+.carousel-container .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+.carousel-container .container p,
+.carousel-container .container .button-container {
+  width: 100%; /* Ensure both take full width of the container */
+  max-width: 600px; /* Optional: set a max-width to match your design */
+}
+
+#hero .button-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Ensure the container takes the full width of the parent */
+  margin-top: 20px; /* Add some margin for spacing if needed */
+}
+
+#hero .button-container a {
+  margin-left: auto; /* Push the button to the right */
+}
+
 .carousel-text {
     white-space: nowrap; /* Prevent text wrapping */
     font-size: 2rem; /* Initial font size */
@@ -645,8 +690,6 @@ span2{
   margin: 0;
   font-size: 60px;
   font-weight: 700;
-  padding-left: 122px;
-  padding-bottom: 100px;
 
 }	
 #hero h2 {
@@ -772,12 +815,7 @@ span2{
 
 #hero .btn-get-started:hover {
   background: #1e81b0;
-}
 
-#hero .button-container {
-  display: flex;
-  justify-content: flex-end; /* Align the button to the right */
-  width: 38%; /* Ensure the container takes the full width of the parent */
 }
 
 #hero .btn-get-started2 {
