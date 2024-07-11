@@ -605,33 +605,11 @@ span2{
   left: 0;
   bottom: 0;
 }
-#hero .carousel-container h1 {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}	
+
 #hero .logo-image {
   height: 3em; /* Adjust the height as needed */
   vertical-align: middle; /* Ensure it aligns vertically with the text */
   margin-right: 0; /* Add some space between the logo and the text */
-
-}
-
-#hero h1 span2 {
-  font-size: 6vw; /* Adjust this value as needed for responsiveness */
-}
-
-p {
-  font-size: 4vw; /* Adjust this value as needed for responsiveness */
-}
-
-@media (min-width: 600px) {
-  #hero h1 span2 {
-    font-size: 60px; /* Default size for larger screens */
-  }
-  p {
-    font-size: 16px; /* Default size for larger screens */
-  }
 	
 }
 #hero .carousel-item {
