@@ -946,9 +946,10 @@ section {
 }
 
 .about .content .btn-learn-more:hover {
-  background: #1E4133;
+  background: #e6635a;
   color: #fff;
   text-decoration: none;
+	border: 2px solid #e6635a;
 }
 
 /*--------------------------------------------------------------
