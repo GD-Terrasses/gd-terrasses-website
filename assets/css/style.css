@@ -609,6 +609,11 @@ span2{
   max-width: 600px; /* Optional: set a max-width to match your design */
 }
 
+.carousel-container .container p,
+.carousel-container .container .button-container2 {
+  width: 100%; /* Ensure both take full width of the container */
+  max-width: 900px; /* Optional: set a max-width to match your design */
+}
 #hero .button-container {
   display: flex;
   justify-content: flex-end; /* Align the button to the right */
@@ -620,6 +625,15 @@ span2{
   margin-left: auto; /* Push the button to the right */
 }
 
+#hero .button-container2 {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Ensure the container takes the full width of the parent */
+  margin-top: 20px; /* Add some margin for spacing if needed */
+}
+#hero .button-container2 a {
+  margin-left: auto; /* Push the button to the right */
+}
 .carousel-text {
     white-space: nowrap; /* Prevent text wrapping */
     font-size: 2rem; /* Initial font size */
@@ -662,7 +676,13 @@ span2{
   color: #fff;
   margin-top: 10px;
   max-width: 600px; /* You can adjust this value to your needs */
-    
+}
+
+#hero p3 {
+  animation-delay: 0.4s;
+  color: #fff;
+  margin-top: 10px;
+  max-width: 900px; /* You can adjust this value to your needs */
 }
 #hero h1 span2 {
   font-size: 10vw; /* Adjust this value as needed for responsiveness */
@@ -766,7 +786,7 @@ span2{
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
   background: #1E4133;
   margin-top: 15px;
 }
@@ -787,7 +807,7 @@ span2{
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  animation-delay: 8s;
+  animation-delay: 1.5s;
   background: #1E4133;
   margin-top: 15px;
 }
