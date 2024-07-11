@@ -344,7 +344,7 @@ span2{
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #bc844b;
+  background: #47705E;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -354,12 +354,12 @@ span2{
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #1e81b0;
+  background: #e6635a;
 }
 
 .navbar .getstarted2,
 .navbar .getstarted2:focus {
-  background: #47705E;
+  background: #1e81b0;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -369,7 +369,7 @@ span2{
 .navbar .getstarted2:hover,
 .navbar .getstarted2:focus:hover {
   color: #fff;
-  background: #1e81b0;
+  background: #e6635a;
 
 }
 .navbar .dropdown ul {
@@ -681,6 +681,7 @@ span2{
 #hero p3 {
   animation-delay: 0.4s;
   color: #fff;
+	justify-content: left;
   margin-top: 10px;
   max-width: 900px; /* You can adjust this value to your needs */
 }
@@ -787,12 +788,12 @@ span2{
   line-height: 1;
   color: #fff;
   animation-delay: 1.5s;
-  background: #1E4133;
+  background: #47705E;
   margin-top: 15px;
 }
 
 #hero .btn-get-started:hover {
-  background: #1e81b0;
+  background: #e6635a;
 
 }
 
@@ -808,12 +809,12 @@ span2{
   line-height: 1;
   color: #fff;
   animation-delay: 1.5s;
-  background: #1E4133;
+  background: #47705E;
   margin-top: 15px;
 }
 
 #hero .btn-get-started2:hover {
-  background: #1e81b0;
+  background: #e6635a;
 }
 
 @media (max-width: 992px) {
@@ -1489,8 +1490,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #1e81b0;
-  border: 2px solid #1e81b0;
+  background: #e6635a;
+  border: 2px solid #e6635a;
 }
 
 /*--------------------------------------------------------------
@@ -2003,7 +2004,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #bc844b
+  background: #1e81b0
 
 ;
   border: 0;
@@ -2014,7 +2015,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1e81b0;
+  background: #e6635a;
 }
 
 @keyframes animate-loading {
