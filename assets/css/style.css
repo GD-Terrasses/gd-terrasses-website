@@ -661,7 +661,7 @@ span2{
   animation-delay: 0.4s;
   color: #fff;
   margin-top: 10px;
-  max-width: 400px; /* You can adjust this value to your needs */
+  max-width: 600px; /* You can adjust this value to your needs */
     
 }
 #hero h1 span2 {
@@ -669,7 +669,7 @@ span2{
 }
 
 #hero p2 {
-  font-size: 2.5vw; /* Adjust this value as needed for responsiveness */
+  font-size: 3vw; /* Adjust this value as needed for responsiveness */
 }
 
 @media (min-width: 600px) {
