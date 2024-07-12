@@ -559,6 +559,28 @@ span2{
   position: relative;
 }
 
+.word {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.word:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.word:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 #hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
@@ -817,6 +839,26 @@ span2{
   background: #e6635a;
 }
 
+#hero .btn-get-started3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  animation-delay: 5s;
+  background: #47705E;
+  margin-top: 15px;
+}
+
+#hero .btn-get-started3:hover {
+  background: #e6635a;
+	
+}	
 @media (max-width: 992px) {
   #hero {
     height: 100vh;
@@ -897,6 +939,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+ .highlight {
+        color:#e6635a;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
