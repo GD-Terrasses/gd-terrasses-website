@@ -700,8 +700,11 @@ span2{
   max-width: 600px; /* You can adjust this value to your needs */
 }
 
+.custom-animate-duration {
+  animation-duration: 3s; /* Adjust the time as needed */
+}
 #hero p3 {
-  animation-delay: 0.4s;
+  animation-delay: 5s;
   color: #fff;
 	justify-content: left;
   margin-top: 10px;
@@ -850,7 +853,7 @@ span2{
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  animation-delay: 5s;
+  animation-delay: 7s;
   background: #47705E;
   margin-top: 15px;
 }
