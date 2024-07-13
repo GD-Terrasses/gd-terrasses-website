@@ -648,32 +648,27 @@ span2{
   width: 100%; /* Ensure both take full width of the container */
   max-width: 900px; /* Optional: set a max-width to match your design */
 }
-#hero .button-container {
-  display: flex;
-  justify-content: flex-end; /* Align the button to the right */
-  width: 100%; /* Ensure the container takes the full width of the parent */
-  margin-top: 20px; /* Add some margin for spacing if needed */
-}
-
-#hero .button-container a {
-  margin-left: auto; /* Push the button to the right */
-}
-
+#hero .button-container,
 #hero .button-container2 {
   display: flex;
   justify-content: flex-end; /* Align the button to the right */
   width: 100%; /* Ensure the container takes the full width of the parent */
   margin-top: 20px; /* Add some margin for spacing if needed */
 }
+
+#hero .button-container a
 #hero .button-container2 a {
   margin-left: auto; /* Push the button to the right */
 }
+
 /* Center the button on small screens */
 @media (max-width: 767px) {
- #hero .button-container #hero .button-container2 {
+ #hero .button-container, 
+ #hero .button-container2 {
     justify-content: center;
   }
- #hero .button-container a, #hero .button-container2 a {
+ #hero .button-container a, 
+ #hero .button-container2 a {
     margin-left: 0; /* Reset margin to center the button */
   }
 	
