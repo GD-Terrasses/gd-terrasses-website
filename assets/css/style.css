@@ -668,6 +668,16 @@ span2{
 #hero .button-container2 a {
   margin-left: auto; /* Push the button to the right */
 }
+/* Center the button on small screens */
+@media (max-width: 767px) {
+ #hero .button-container #hero .button-container2 {
+    justify-content: center;
+  }
+ #hero .button-container a, #hero .button-container2 a {
+    margin-left: 0; /* Reset margin to center the button */
+  }
+	
+}
 .carousel-text {
     white-space: nowrap; /* Prevent text wrapping */
     font-size: 2rem; /* Initial font size */
