@@ -603,7 +603,7 @@ span2{
   .word {
     display: block; /* Make each word take up the full width */
     margin-bottom: 20px; /* Adjust this value to increase or decrease space */
-	font-size: 7vw; /* Increase the font size for small screens */
+	font-size: 10vw; /* Increase the font size for small screens */
   }
 
 }
