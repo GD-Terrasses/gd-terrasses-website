@@ -574,6 +574,7 @@ span2{
 .word {
   opacity: 0;
   animation: fadeIn 2s forwards;
+  display: inline-block; /* Ensure each word is treated as a block */
 }
 
 .word:nth-child(1) {
@@ -592,6 +593,19 @@ span2{
   to {
     opacity: 1;
   }
+	 }
+	/* Media query for smaller screens */
+@media (max-width: 768px) {
+	#heading {
+    text-align: center; /* Center align the heading on small screens */
+    width: 100%; /* Ensure the heading takes the full width */
+  }
+  .word {
+    display: block; /* Make each word take up the full width */
+    margin-bottom: 20px; /* Adjust this value to increase or decrease space */
+	font-size: 7vw; /* Increase the font size for small screens */
+  }
+
 }
 #hero .carousel,
 #hero .carousel-inner,
