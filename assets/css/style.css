@@ -2217,8 +2217,15 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  color: #fff; /* Ensure all text in footer-info is white */
+}
+#footer .footer-top .footer-info .contact-info {
+  color: #fff; /* Ensure contact info text is white */
 }
 
+#footer .footer-top .footer-info .contact-info strong {
+  color: #bc844b; /* Highlighted text color */
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
