@@ -1,14 +1,23 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    
+
     const form = event.target;
     const formData = new FormData(form);
-    
+
     // Check honeypot field
     if (formData.get('honeypot')) {
         console.log('Spam detected, form submission aborted.');
         return;
     }
+
+    // Check reCAPTCHA response
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+        document.querySelector('.error-message').style.display = 'block';
+        document.querySelector('.error-message').innerText = 'Please complete the reCAPTCHA.';
+        return;
+    }
+    formData.append('g-recaptcha-response', recaptchaResponse);
 
     // Show loading message
     document.querySelector('.loading').style.display = 'block';
