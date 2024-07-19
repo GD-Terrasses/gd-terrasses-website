@@ -3,6 +3,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     const form = event.target;
     const formData = new FormData(form);
+    
+    // Check honeypot field
+    if (formData.get('honeypot')) {
+        console.log('Spam detected, form submission aborted.');
+        return;
+    }
 
     // Show loading message
     document.querySelector('.loading').style.display = 'block';
@@ -11,7 +17,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     fetch(form.action, {
         method: form.method,
-        body: formData
+        body: formData,
+        mode: 'cors'
     })
     .then(response => {
         if (!response.ok) {
@@ -20,24 +27,18 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         return response.json();
     })
     .then(data => {
-        // Hide loading message
         document.querySelector('.loading').style.display = 'none';
 
         if (data.success) {
-            // Show success message
             document.querySelector('.sent-message').style.display = 'block';
             form.reset();
         } else {
-            // Show error message
             document.querySelector('.error-message').style.display = 'block';
             document.querySelector('.error-message').innerText = data.message || 'An error occurred while submitting the form.';
         }
     })
     .catch(error => {
-        // Hide loading message
         document.querySelector('.loading').style.display = 'none';
-
-        // Show error message
         document.querySelector('.error-message').style.display = 'block';
         document.querySelector('.error-message').innerText = `Error: ${error.message}`;
         console.error('There was an error!', error);
