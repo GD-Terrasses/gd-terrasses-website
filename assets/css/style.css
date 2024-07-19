@@ -800,14 +800,14 @@ span2{
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 30px;
+  font-size: 36px;
+  font-weight:700; 
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
+  border-radius: 0px;
   transition: 25s;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(230, 99, 90, 0.8);
   width: 54px;
   height: 54px;
   display: flex;
@@ -817,8 +817,8 @@ span2{
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  background: none;
+  color: rgba(230, 99, 290, 1);
 }
 
 #hero .carousel-indicators li {
