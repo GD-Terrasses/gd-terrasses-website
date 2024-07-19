@@ -13,7 +13,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         method: form.method,
         body: formData
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+        return response.json();
+    })
     .then(data => {
         // Hide loading message
         document.querySelector('.loading').style.display = 'none';
@@ -34,7 +39,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
         // Show error message
         document.querySelector('.error-message').style.display = 'block';
-        document.querySelector('.error-message').innerText = error.message || 'An error occurred while submitting the form.';
+        document.querySelector('.error-message').innerText = `Error: ${error.message}`;
+        console.error('There was an error!', error);
     });
 });
-// JavaScript Document
