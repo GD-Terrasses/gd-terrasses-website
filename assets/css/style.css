@@ -2127,6 +2127,13 @@ section {
   100% {
     transform: rotate(360deg);
   }
+	}
+	/* Add margin to the bottom of the "Appellez-nous" section on smaller screens */
+@media (max-width: 991px) {
+  .contact .col-md-6:last-child {
+    margin-bottom: 20px;
+  }
+
 }
 
 /*--------------------------------------------------------------
