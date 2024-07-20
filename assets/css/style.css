@@ -575,6 +575,7 @@ span2{
   opacity: 0;
   animation: fadeIn 2s forwards;
   display: inline-block; /* Ensure each word is treated as a block */
+ 
 }
 
 .word:nth-child(1) {
@@ -621,8 +622,9 @@ span2{
 #hero .logo-image {
   height: 3em; /* Adjust the height as needed */
   vertical-align: middle; /* Ensure it aligns vertically with the text */
-  margin-right: 0; /* Add some space between the logo and the text */
-	
+  margin-right: -0.5em; /* Move the logo to the left by decreasing the margin */
+  position: relative; /* Ensure the position is relative for finer adjustments */
+  left: -0.5em; /* Optional: fine-tune positioning */
 }
 #hero .carousel-item {
   background-size: cover;
@@ -750,6 +752,7 @@ span2{
 }
 #hero h1 span2 {
   font-size: 10vw; /* Adjust this value as needed for responsiveness */
+  letter-spacing: 0.1em; /* Adjust the spacing as needed */
 }
 
 #hero p2 {
@@ -2139,6 +2142,9 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+.title {
+margin: 40px 0;	
+	}
 .breadcrumbs {
   padding: 15px 0;
   background: #f6f9fd;
