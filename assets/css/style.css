@@ -2185,6 +2185,33 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Thank You Message
+--------------------------------------------------------------*/
+
+.thank-you-message {
+  margin: 40px 0; /* Adds space before and after the thank you message */
+}
+
+.thank-you-message h2 {
+  margin-bottom: 10px; /* Adjusts the space below the header */
+}
+
+.thank-you-message p {
+  margin-top: 10px; /* Adjusts the space above the paragraph */
+}
+
+.back-to-homepage {
+  display: flex;
+  justify-content: flex-end; /* Aligns the link to the right within its parent */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Ensures the .container class is not interfering */
+.container {
+  position: relative;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
