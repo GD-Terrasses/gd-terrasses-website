@@ -1608,7 +1608,18 @@ section {
   text-align: center;
   border-radius: 50px;
 }
+.portfolio .dropdown {
+  margin-bottom: 25px;
+}
 
+.portfolio .dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio .dropdown-menu .dropdown-item {
+  cursor: pointer;
+}
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -1704,7 +1715,30 @@ section {
   opacity: 1;
   bottom: 20px;
 }
+.portfolio .portfolio-container {
+  position: relative;
+}
 
+.portfolio .see-more {
+  width: 100%;
+  margin-top: 30px;
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align to the right */
+}
+.portfolio .see-more .btn {
+  padding: 10px 20px;
+  background-color: #47705E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensure the button is inline */
+}
+
+.portfolio .see-more .btn:hover {
+  background-color: #e6635a;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
