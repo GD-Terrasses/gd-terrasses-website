@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLightbox Test</title>
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Consultez notre portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-terrasses">Terrasses</li>
+              <li data-filter=".filter-charp">Charpenterie</li>
+              <li data-filter=".filter-menu">Menuiserie</li>
+			  <li data-filter=".filter-create">Création</li>
+			  <li data-filter=".filter-reno">Rénovation</li>
+			  <li data-filter=".filter-entre">Entretien</li>
+			  <li data-filter=".filter-other">Other</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-terrasses filter-create">
+            <img src="assets/img/portfolio/portfolio-1.jpeg" class="img-fluid" alt="terrasse-piscine-1">
+            <div class="portfolio-info">
+              <h4> Terrasse&nbsp;</h4>
+              <p>Creation&nbsp;</p>
+              <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-1.jpg" data-gallery="gallery-1" class="portfolio-lightbox preview-link" title="Terrasse Piscine"><i class="bx bx-plus"></i></a>
+              <a href="Terrasses-Piscine.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+				
+				<!-- Hidden links for the lightbox gallery -->
+  
+	<a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-2.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-3.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>		
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-4.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-5.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-6.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-7.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+    <a href="assets/img/portfolio/Terrasse_Piscine/Terrasse_Piscine-8.jpg" data-gallery="gallery-1" class="portfolio-lightbox d-none"></a>
+				
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+	
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const lightbox = GLightbox({
+      selector: '.portfolio-lightbox',
+      loop: true
+    });
+  });
+</script>
+		 <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
