@@ -236,7 +236,7 @@ span2{
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #bc844b
+  background: #e6635a
 
 ;
   width: 40px;
@@ -606,7 +606,19 @@ span2{
     margin-bottom: 20px; /* Adjust this value to increase or decrease space */
 	font-size: 10vw; /* Increase the font size for small screens */
   }
+ /* Specific styling for the second slide heading */
+  #hero .carousel-item:nth-child(2) .container h2 {
+    text-align: center;
+    margin: 0 auto; /* Center the heading container */
+    width: 100%; /* Ensure the heading container takes the full width */
+  }
 
+  /* Adjust the word styling within the second slide heading */
+  #hero .carousel-item:nth-child(2) .container h2 .word {
+    display: inline-block;
+    width: auto; /* Ensure each word is treated as a block */
+    font-size: 8vw; /* Adjust this value as needed for responsiveness */
+  }
 }
 #hero .carousel,
 #hero .carousel-inner,
@@ -2138,7 +2150,8 @@ section {
 }
 
 .contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .php-email-form textarea, 
+.contact .php-email-form select {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -2146,11 +2159,13 @@ section {
 }
 
 .contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .php-email-form textarea:focus, 
+.contact .php-email-form select:focus {
   border-color: #1e81b0;
 }
 
-.contact .php-email-form input {
+.contact .php-email-form input, 
+.contact .php-email-form select {
   padding: 10px 15px;
 }
 
@@ -2189,7 +2204,35 @@ section {
   }
 
 }
+/* Style the custom select */
+.custom-select {
+  position: relative;
+  
+}
 
+.custom-select select {
+  display: none; /* Hide the default select */
+}
+
+.select-selected {
+  background-color: #f1f1f1;
+  color: red; /* Change this color */
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.select-items div {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.select-items div:hover {
+  background-color: #ddd;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
