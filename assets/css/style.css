@@ -1051,7 +1051,16 @@ section {
   text-decoration: none;
 	border: 2px solid #e6635a;
 }
+.text-right {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1608,18 +1617,6 @@ section {
   text-align: center;
   border-radius: 50px;
 }
-.portfolio .dropdown {
-  margin-bottom: 25px;
-}
-
-.portfolio .dropdown-menu {
-  width: 100%;
-  text-align: center;
-}
-
-.portfolio .dropdown-menu .dropdown-item {
-  cursor: pointer;
-}
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -1726,10 +1723,14 @@ section {
   justify-content: flex-end; /* Align to the right */
 }
 .portfolio .see-more .btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0px;
   padding: 10px 20px;
-  background-color: #47705E;
-  color: #fff;
-  border: none;
+  background-color: #FFF;
+  color: #47705E;
+  border: 2px Solid #47705E;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -1738,6 +1739,8 @@ section {
 
 .portfolio .see-more .btn:hover {
   background-color: #e6635a;
+	color: #FFF;
+	border: 2px Solid #e6635a;
 }
 /*--------------------------------------------------------------
 # Portfolio Details
