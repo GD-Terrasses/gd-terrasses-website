@@ -92,73 +92,83 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
+   <!-- ======= Contact Section ======= -->
+	<section id="contact" class="contact section-bg">
+	  <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          
-          <p>Demander un devis</p>
-        </div>
+		<div class="section-title d-flex justify-content-center">
+		  <p>Demander un devis</p>
+		</div>
 
-        
+		<div class="d-flex justify-content-center">
+		  <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
+			<input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
+			<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/thank-you-page.html">
 
-          <div class="d-flex justify-content-center">
-            <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
-				<input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
-				<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/thank-you-page.html">
-              
-				<div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
-                </div>
-                
-					<div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
-                </div>
-              </div>
+			 
+			<div class="row">
+			  <div class="col-md-6 form-group">
 				
-				<!-- Honeypot Field -->
-				<div style="display:none;">
-        			<input type="text" name="honeypot" value="">
-    			</div>
-				
-				<!-- Dropdown Field for Service -->
-			  <div class="form-group mt-3">
-				<select class="custom-select" name="service" id="service" required>
-				  <option value="" disabled selected>Veuillez sélectionner un service</option>
-				  <option value="Creation">Creation</option>
-				  <option value="Renovation">Renovation</option>
-				  <option value="Entretien">Entretien</option>
-				</select>
+				<input type="text" name="first_name" class="form-control" id="first_name" placeholder="Votre Prénom*" required>
 			  </div>
-				
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
-              </div>
-				
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-				
-				<!-- Google reCAPTCHA -->
-    			<!--<div class="g-recaptcha" data-sitekey="6LdE8BMqAAAAABbrI__nbT12Jmccgg7YjT5L1Qg6"></div>-->
-    
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              
-			  <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
 
-        </div>
+			  <div class="col-md-6 form-group">
+				
+				<input type="text" name="last_name" class="form-control" id="last_name" placeholder="Votre Nom*" required>
+			  </div>
+<p><span style="font-size: smaller; color: lightgrey; font-style: italic;">*obligatoire</span></p>
+			  <div class="col-md-6 form-group mt-3 mt-md-0">
+				
+				<input type="email" class="form-control" name="email" id="email" placeholder="Votre Email*" required>
+			  </div>
 
-     
-    </section><!-- End Contact Section -->
+			  <div class="col-md-6 form-group mt-3 mt-md-0">
+				
+				<input type="text" class="form-control" name="phone" id="phone" placeholder="Votre Numéro de Téléphone">
+			  </div>
+			</div>
 
+			<!-- Honeypot Field -->
+			<div style="display:none;">
+			  <input type="text" name="honeypot" value="">
+			</div>
+
+			<!-- Dropdown Field for Service -->
+			<div class="form-group mt-3">
+			  
+			  <select class="custom-select" name="service" id="service" required>
+				<option value="" disabled selected>Veuillez sélectionner un service</option>
+				<option value="Creation">Creation</option>
+				<option value="Renovation">Renovation</option>
+				<option value="Entretien">Entretien</option>
+			  </select>
+			</div>
+
+			<div class="form-group mt-3">
+			  
+			  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+			</div>
+
+			<div class="form-group mt-3">
+			  
+			  <textarea class="form-control" name="message" rows="5" placeholder="Message*" required></textarea>
+			</div>
+
+			<!-- Google reCAPTCHA -->
+			<!--<div class="g-recaptcha" data-sitekey="6LdE8BMqAAAAABbrI__nbT12Jmccgg7YjT5L1Qg6"></div>-->
+
+			<div class="my-3">
+			  <div class="loading">Loading</div>
+			  <div class="error-message"></div>
+			  <div class="sent-message">Your message has been sent. Thank you!</div>
+			</div>
+
+			<div class="text-center"><button type="submit">Send Message</button></div>
+		  </form>
+		</div>
+	  </div>
+	</section><!-- End Contact Section -->
+	  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
