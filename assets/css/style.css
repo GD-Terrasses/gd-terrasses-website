@@ -2255,11 +2255,30 @@ section {
     padding: 10px 14px; /* Adjust padding for smaller screens */
   }
 }
+.custom-checkbox-group label {
+    font-size: 16px; /* Adjust font size */
+    font-weight: normal; /* Make text bold */
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Space below the label */
+    display: block; /* Ensure label is on its own line */
+}
+
 /* Custom styles for checkboxes */
 .custom-control.custom-checkbox {
   margin-bottom: 15px;
 }
-
+.custom-checkbox-group .custom-label {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #47705E; /* Text color */
+    margin-bottom: 10px; /* Space below the label */
+}
+.custom-label {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #47705E; /* Text color */
+    margin-bottom: 10px; /* Space below the label */
+}
 .custom-control.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
   background-color: #1e81b0;
   border-color: #1e81b0;
@@ -2329,7 +2348,20 @@ section {
 .custom-control.custom-checkbox input.form-control {
   margin-top: 10px;
 }
+/* Target only the specific checkbox container */
+.data-protection-checkbox-group {
+    text-align: right; /* Align text to the right */
+}
 
+/* Optional: Adjust label styling if needed */
+.data-protection-checkbox-group .custom-control {
+    display: inline-block; /* Keep the checkbox and label in line */
+}
+
+/* Optional: Adjust margin if needed */
+.data-protection-checkbox-group .custom-control-label {
+    margin-left: 10px; /* Space between the checkbox and the label */
+}
 
 /*--------------------------------------------------------------
 # Footer

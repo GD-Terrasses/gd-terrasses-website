@@ -104,6 +104,8 @@
 			<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/thank-you-page.html">
 			<input type="hidden" name="replyTo" value="@"> <!-- Optional -->
 
+			  <label class="custom-label">Vos Coordonnées</label>
+			  
 			 <p><span style="font-size: smaller; color: lightgrey; font-style: italic;">*obligatoire</span></p>
 			<div class="row">
 			  <div class="col-md-6 form-group">
@@ -134,7 +136,7 @@
 
 			<!-- Checkbox Field for Service -->
 			<div class="form-group mt-3 custom-checkbox-group">
-			  <label>Veuillez sélectionner un ou plusieurs services</label>
+			  <label class="custom-label">Veuillez sélectionner un ou plusieurs services</label>
 			  <div class="custom-control custom-checkbox">
 				<input type="checkbox" class="custom-control-input" id="service-creation" name="$service[]" value="Creation">
 				<label class="custom-control-label" for="service-creation">Création</label>
@@ -151,7 +153,7 @@
 
 			<!-- Checkbox Field for Structure Types -->
 			<div class="form-group mt-3 custom-checkbox-group">
-			  <label>Veuillez sélectionner les types de structures</label>
+			  <label class="custom-label">Veuillez sélectionner les types de structures</label>
 			  <div class="row">
 				<div class="col-md-6">
 				  <div class="custom-control custom-checkbox">
@@ -204,24 +206,35 @@
 				  <div class="custom-control custom-checkbox autre-checkbox">
 					<input type="checkbox" class="custom-control-input" id="autre" name="$type[]" value="Autre">
 					<label class="custom-control-label" for="autre">Autre</label>
-					<input type="text" class="form-control d-none" id="autre-input" name="autre-input" placeholder="Veuillez préciser">
+					<input type="text" class="form-control d-none" id="autre-input" name="$autre-input" placeholder="Veuillez préciser">
 				  </div>
 				</div>
 			  </div>
 			</div>
 	
 			<div class="form-group mt-3">
-			  <input type="text" class="form-control" name="$size" id="size" placeholder="Taille approximative du projet (en m2)" required>
+			  <input type="text" class="form-control" name="$size" id="size" placeholder="Taille approximative du projet (en m2)">
 			</div>
 			  
 			<!--<div class="form-group mt-3">
 			  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet*" required>
 			</div>-->
-
+			  
+			<label class="custom-label">Informations Complémentaires</label>
+			  
 			<div class="form-group mt-3">
-			  <textarea class="form-control" name="message" rows="5" placeholder="Veuillez ajouter plus de détails ou d'informations sur votre projet souhaité*" required></textarea>
+			  <textarea class="form-control" name="message" rows="5" placeholder="Veuillez ajouter plus de détails"></textarea>
 			</div>
 
+			  <!-- Data Protection Notice Checkbox -->
+<div class="form-group mt-3 data-protection-checkbox-group">
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="data-protection-checkbox" name="data-protection" required>
+    <label class="custom-control-label" for="data-protection-checkbox">
+      J'ai lu et j'accepte la <a href="Politique-de-Protection-des-Donnees.html" target="_blank">politique de protection des données</a>.
+    </label>
+  </div>
+</div>
 			<!-- Google reCAPTCHA -->
 			<!--<div class="g-recaptcha" data-sitekey="6LdE8BMqAAAAABbrI__nbT12Jmccgg7YjT5L1Qg6"></div>-->
 
@@ -231,7 +244,7 @@
 			  <div class="sent-message">Your message has been sent. Thank you!</div>
 			</div>
 
-			<div class="text-center"><button type="submit">Send Message</button></div>
+			<div class="text-right"><button type="submit">Envoyer</button></div>
 		  </form>
 		</div>
 	  </div>
@@ -343,6 +356,20 @@
       autreInput.classList.add('d-none');
     }
   });
+</script>
+	
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+  const dataProtectionCheckbox = document.getElementById('data-protection-checkbox');
+
+  form.addEventListener('submit', function (event) {
+    if (!dataProtectionCheckbox.checked) {
+      event.preventDefault(); // Prevent form submission
+      alert('Vous devez accepter la politique de protection des données avant de soumettre le formulaire.');
+    }
+  });
+});
 </script>
 	
   <!-- Template Main JS File -->
