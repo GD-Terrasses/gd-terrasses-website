@@ -626,6 +626,20 @@ span2{
   position: relative; /* Ensure the position is relative for finer adjustments */
   left: -0.5em; /* Optional: fine-tune positioning */
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust the max-width value as needed */
+  #hero .logo-image {
+    margin-right: 0; /* Reset the margin-right for smaller screens */
+    left: 0; /* Reset the left position for smaller screens */
+    display: block; /* Ensure it's displayed as a block element */
+    margin-left: auto; /* Center the logo horizontally */
+    margin-right: auto; /* Center the logo horizontally */
+  }
+
+  #hero h1 {
+    text-align: center; /* Center-align the text for smaller screens */
+  }
+}
 #hero .carousel-item {
   background-size: cover;
   background-position: top center;
