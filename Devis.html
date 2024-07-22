@@ -133,90 +133,93 @@
 			</div>
 
 			<!-- Checkbox Field for Service -->
-<div class="form-group mt-3 custom-checkbox-group">
-  <label>Veuillez sélectionner un ou plusieurs services</label>
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="service-creation" name="$service[]" value="Creation">
-    <label class="custom-control-label" for="service-creation">Création</label>
-  </div>
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="service-renovation" name="$service[]" value="Renovation">
-    <label class="custom-control-label" for="service-renovation">Rénovation</label>
-  </div>
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="service-entretien" name="$service[]" value="Entretien">
-    <label class="custom-control-label" for="service-entretien">Entretien</label>
-  </div>
-</div>
-
-<!-- Checkbox Field for Structure Types -->
-<div class="form-group mt-3 custom-checkbox-group">
-  <label>Veuillez sélectionner les types de structures</label>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="abri-jardin" name="$type[]" value="Abri de jardin">
-        <label class="custom-control-label" for="abri-jardin">Abri de jardin</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="abri-voiture" name="$type[]" value="Abri-Voiture">
-        <label class="custom-control-label" for="abri-voiture">Abri-Voiture</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="cabane" name="$type[]" value="Cabane">
-        <label class="custom-control-label" for="cabane">Cabane</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="cloture" name="$type[]" value="Clôture">
-        <label class="custom-control-label" for="cloture">Clôture</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="cuisine-exterieure" name="$type[]" value="Cuisine extérieure">
-        <label class="custom-control-label" for="cuisine-exterieure">Cuisine extérieure</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="escaliers" name="$type[]" value="Escaliers">
-        <label class="custom-control-label" for="escaliers">Escaliers</label>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="kiosque" name="$type[]" value="Kiosque">
-        <label class="custom-control-label" for="kiosque">Kiosque</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="maison-jeux" name="$type[]" value="Maison de jeux">
-        <label class="custom-control-label" for="maison-jeux">Maison de jeux</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="pergola" name="$type[]" value="Pergola">
-        <label class="custom-control-label" for="pergola">Pergola</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="solivage" name="$type[]" value="Solivage">
-        <label class="custom-control-label" for="solivage">Solivage</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="terrasse" name="$type[]" value="Terrasse">
-        <label class="custom-control-label" for="terrasse">Terrasse</label>
-      </div>
-      <div class="custom-control custom-checkbox autre-checkbox">
-        <input type="checkbox" class="custom-control-input" id="autre" name="$type[]" value="Autre">
-        <label class="custom-control-label" for="autre">Autre</label>
-        <input type="text" class="form-control d-none" id="autre-input" name="autre-input" placeholder="Veuillez préciser">
-      </div>
-    </div>
-  </div>
-</div>
-	
-
-			<div class="form-group mt-3">
-			  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet*" required>
+			<div class="form-group mt-3 custom-checkbox-group">
+			  <label>Veuillez sélectionner un ou plusieurs services</label>
+			  <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="service-creation" name="$service[]" value="Creation">
+				<label class="custom-control-label" for="service-creation">Création</label>
+			  </div>
+			  <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="service-renovation" name="$service[]" value="Renovation">
+				<label class="custom-control-label" for="service-renovation">Rénovation</label>
+			  </div>
+			  <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="service-entretien" name="$service[]" value="Entretien">
+				<label class="custom-control-label" for="service-entretien">Entretien</label>
+			  </div>
 			</div>
 
+			<!-- Checkbox Field for Structure Types -->
+			<div class="form-group mt-3 custom-checkbox-group">
+			  <label>Veuillez sélectionner les types de structures</label>
+			  <div class="row">
+				<div class="col-md-6">
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="abri-jardin" name="$type[]" value="Abri de jardin">
+					<label class="custom-control-label" for="abri-jardin">Abri de jardin</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="abri-voiture" name="$type[]" value="Abri-Voiture">
+					<label class="custom-control-label" for="abri-voiture">Abri-Voiture</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="cabane" name="$type[]" value="Cabane">
+					<label class="custom-control-label" for="cabane">Cabane</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="cloture" name="$type[]" value="Clôture">
+					<label class="custom-control-label" for="cloture">Clôture</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="cuisine-exterieure" name="$type[]" value="Cuisine extérieure">
+					<label class="custom-control-label" for="cuisine-exterieure">Cuisine extérieure</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="escaliers" name="$type[]" value="Escaliers">
+					<label class="custom-control-label" for="escaliers">Escaliers</label>
+				  </div>
+				</div>
+
+				<div class="col-md-6">
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="kiosque" name="$type[]" value="Kiosque">
+					<label class="custom-control-label" for="kiosque">Kiosque</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="maison-jeux" name="$type[]" value="Maison de jeux">
+					<label class="custom-control-label" for="maison-jeux">Maison de jeux</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="pergola" name="$type[]" value="Pergola">
+					<label class="custom-control-label" for="pergola">Pergola</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="solivage" name="$type[]" value="Solivage">
+					<label class="custom-control-label" for="solivage">Solivage</label>
+				  </div>
+				  <div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="terrasse" name="$type[]" value="Terrasse">
+					<label class="custom-control-label" for="terrasse">Terrasse</label>
+				  </div>
+				  <div class="custom-control custom-checkbox autre-checkbox">
+					<input type="checkbox" class="custom-control-input" id="autre" name="$type[]" value="Autre">
+					<label class="custom-control-label" for="autre">Autre</label>
+					<input type="text" class="form-control d-none" id="autre-input" name="autre-input" placeholder="Veuillez préciser">
+				  </div>
+				</div>
+			  </div>
+			</div>
+	
 			<div class="form-group mt-3">
-			  <textarea class="form-control" name="message" rows="5" placeholder="Message*" required></textarea>
+			  <input type="text" class="form-control" name="$size" id="size" placeholder="Taille approximative du projet (en m2)" required>
+			</div>
+			  
+			<!--<div class="form-group mt-3">
+			  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet*" required>
+			</div>-->
+
+			<div class="form-group mt-3">
+			  <textarea class="form-control" name="message" rows="5" placeholder="Veuillez ajouter plus de détails ou d'informations sur votre projet souhaité*" required></textarea>
 			</div>
 
 			<!-- Google reCAPTCHA -->
