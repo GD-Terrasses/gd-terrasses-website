@@ -380,39 +380,31 @@
 
 	<script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Options for the observer (which can be adjusted as needed)
   const options = {
     root: null, // relative to the viewport
     rootMargin: '0px',
     threshold: 0.1 // trigger when 10% of the element is visible
   };
 
-  // Function to handle the intersection event
   const handleIntersection = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const element = entry.target;
 
-        // Add classes based on the element's data attributes or class names
         if (element.classList.contains('fade-in-left')) {
           element.classList.add('animate__fadeInLeft');
         } else if (element.classList.contains('fade-in-right')) {
           element.classList.add('animate__fadeInRight');
         }
 
-        // Optionally add a 'visible' class to trigger visibility CSS effects
         element.classList.add('visible');
-        
-        // Stop observing the element
         observer.unobserve(element);
       }
     });
   };
 
-  // Create an Intersection Observer instance
   const observer = new IntersectionObserver(handleIntersection, options);
 
-  // Select elements to observe
   document.querySelectorAll('.animated-element').forEach(element => {
     observer.observe(element);
   });

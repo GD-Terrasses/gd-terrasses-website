@@ -998,7 +998,6 @@ section {
 
 .section-title p {
   margin: 0;
-  margin: 0;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1164,70 +1163,37 @@ section {
   color: #1E4133;
   line-height: 1;
 }
-.column-gap {
+.inner-page .column-gap {
     padding-right: 20px; /* Adjust the value as needed */
 }
 
-.column-gap + .column-gap {
+.inner-page .column-gap + .column-gap {
     padding-left: 20px; /* Adjust the value as needed */
 }
-.logo-image {
+.inner-page .logo-image {
     height: auto; /* Maintain aspect ratio */
     max-height: 300px; /* Adjust this value as needed */
     width: auto; /* Ensure it scales proportionally */
 }
 /* Initial hidden state */
-.animated-element {
+.inner-page .animated-element {
   opacity: 0; /* Or use transform: translateX() to hide off-screen if needed */
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-.animated-element.fade-in-left {
-  transform: translateX(-100%);
+.inner-page .animated-element.fade-in-left {
+  transform: translateX(-50%);
 }
 
-.animated-element.fade-in-right {
-  transform: translateX(100%);
+.inner-page .animated-element.fade-in-right {
+  transform: translateX(50%);
 }
 
-.animated-element.visible {
+.inner-page .animated-element.visible {
   opacity: 1;
   transform: translateX(0); /* Reset the transformation to original position */
 }
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .container1, .container2 {
-    padding: 0 15px; /* Adjust padding for mobile */
-	  flex-direction: column; /* Ensure columns stack vertically */
-  }
 
-  .col-lg-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-	  padding: 0; /* Remove column padding for mobile */
-  }
-
-  .row.content {
-    flex-direction: column;
-  }
-
-  .section-title, .para, .inner-page {
-    padding: 10px;
-  }
-
-  .image-container {
-    text-align: center;
-  }
-
-  .column-gap {
-    margin: 0; /* Remove margin gaps on smaller screens */
-  }
-}
-
-/* Prevent overflow */
-body {
-  overflow-x: hidden;
-}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
