@@ -1216,6 +1216,18 @@ section {
   #inner-page .section-title p {
     font-size: 28px;
   }
+	.inner-page .animated-element.fade-in-left {
+		transform: translateY(50%); /* Change the transform to vertical for small screens */
+	}
+
+	.inner-page .animated-element.fade-in-right {
+		transform: translateY(50%); /* Change the transform to vertical for small screens */
+	}
+	
+	.inner-page .animated-element.visible {
+		transform: translateY(0); /* Reset the transformation to original position */
+	}
+
 }
 /*--------------------------------------------------------------
 # Counts
@@ -1502,7 +1514,7 @@ section {
 .services .read-more:hover {
   text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 	transition: all ease-in-out 0.3s;
 }
 .services .icon-box .icon {
