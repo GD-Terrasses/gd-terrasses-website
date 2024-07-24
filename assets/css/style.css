@@ -1197,6 +1197,11 @@ section {
   transform: translateX(0); /* Reset the transformation to original position */
 }
 
+@media (max-width: 768px) {
+  #inner-page .section-title p {
+    font-size: 28px;
+  }
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
