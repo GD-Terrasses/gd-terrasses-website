@@ -625,6 +625,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Save form values to localStorage when clicking on the data policy link
   document.getElementById('data-policy-link').addEventListener('click', function(event) {
+    localStorage.setItem('returningFromPolicy', 'true');
     saveFormValues();
   });
 
@@ -657,7 +658,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (storedValues['autreChecked']) {
         const autreCheckbox = document.getElementById('autre');
         const autreInput = document.getElementById('autre-input');
-        
+
         autreCheckbox.checked = storedValues['autreChecked'];
         autreInput.value = storedValues['autreInput'];
 
@@ -676,8 +677,19 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('data-protection-checkbox').checked = true;
     }
 
-    // Load form values from localStorage
-    loadFormValues();
+    // Load form values from localStorage if returning from the data policy page
+    if (localStorage.getItem('returningFromPolicy') === 'true') {
+      localStorage.removeItem('returningFromPolicy');
+      loadFormValues();
+    } else {
+      // Clear localStorage on page load if not returning from the data policy page
+      localStorage.removeItem('formValues');
+    }
+  });
+
+  // Clear localStorage on form submission
+  document.querySelector('.php-email-form').addEventListener('submit', function() {
+    localStorage.removeItem('formValues');
   });
 </script>
 </body>
