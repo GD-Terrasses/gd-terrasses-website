@@ -1244,6 +1244,54 @@ section {
 	}
 }
 /*--------------------------------------------------------------
+# Data Protection Policy
+--------------------------------------------------------------*/
+/* Container for paragraph content */
+#datapolicy .paragraph-container {
+  margin: 0 auto;   /* Center the container horizontally */
+  padding-right: 0; /* Ensure space for right-aligned elements */
+}
+
+/* Align the actions to the right edge of the paragraph container */
+#datapolicy .policy-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px; /* Space between paragraph and actions */
+}
+
+#datapolicy .policy-actions .form-group {
+  margin: 10px 0;
+  text-align: right;
+}
+
+#datapolicy .policy-actions .button-container {
+  text-align: right;
+}
+
+#datapolicy .databutton {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #1E4133;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #1E4133;
+}
+#datapolicy .databutton:hover {
+  background: #e6635a;
+  color: #fff;
+  text-decoration: none;
+	border: 2px solid #e6635a;
+
+}
+/*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
