@@ -1292,15 +1292,7 @@ section {
   text-decoration: none;
 	border: 2px solid #e6635a;
 }
-@media (max-width: 600px) {
-	#datapolicy .policy-actions .accept {
-		fontsize: 8px;
-	}
-	#datapolicy .policy-actions .button-container {
-		display: flex;
-		justify-content: center;
-	}
-}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
