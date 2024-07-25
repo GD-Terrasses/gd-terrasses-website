@@ -231,7 +231,7 @@
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="data-protection-checkbox" name="data-protection" required>
     <label class="custom-control-label" for="data-protection-checkbox">
-      J'ai lu et j'accepte la <a href="politique-de-protection-des-donnees_new.html" target="data-policy-link" id="data-policy-link">politique de protection des données</a>.
+      J'ai lu et j'accepte la <a href="politique-de-protection-des-donnees.html" target="data-policy-link" id="data-policy-link">politique de protection des données</a>.
     </label>
   </div>
 </div>
@@ -620,6 +620,10 @@ document.addEventListener('DOMContentLoaded', function () {
     formValues['autreChecked'] = autreCheckbox.checked;
     formValues['autreInput'] = document.getElementById('autre-input').value;
 
+    // Save the state of the data protection checkbox
+    const dataProtectionCheckbox = document.getElementById('data-protection-checkbox');
+    formValues['dataProtectionChecked'] = dataProtectionCheckbox.checked;
+
     localStorage.setItem('formValues', JSON.stringify(formValues));
   }
 
@@ -655,10 +659,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // Restore the state of 'autre' checkbox and its input field
-      if (storedValues['autreChecked']) {
-        const autreCheckbox = document.getElementById('autre');
-        const autreInput = document.getElementById('autre-input');
+      const autreCheckbox = document.getElementById('autre');
+      const autreInput = document.getElementById('autre-input');
 
+      if (storedValues['autreChecked']) {
         autreCheckbox.checked = storedValues['autreChecked'];
         autreInput.value = storedValues['autreInput'];
 
@@ -667,6 +671,12 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           autreInput.classList.add('d-none');
         }
+      }
+
+      // Restore the state of the data protection checkbox
+      const dataProtectionCheckbox = document.getElementById('data-protection-checkbox');
+      if (storedValues['dataProtectionChecked']) {
+        dataProtectionCheckbox.checked = storedValues['dataProtectionChecked'];
       }
     }
   }
