@@ -101,7 +101,7 @@
 		<div class="d-flex justify-content-center">
 		  <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
 			<input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
-			<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/thank-you-page.html">
+			<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/page-de-remerciement.html">
 			<input type="hidden" name="replyTo" value="@"> <!-- Optional -->
 
 			  <label class="custom-label">Vos Coordonnées</label>
@@ -231,7 +231,7 @@
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="data-protection-checkbox" name="data-protection" required>
     <label class="custom-control-label" for="data-protection-checkbox">
-      J'ai lu et j'accepte la <a href="politique-de-protection-des-donnees.html" target="_blank">politique de protection des données</a>.
+      J'ai lu et j'accepte la <a href="politique-de-protection-des-donnees.html" target="data-policy-link" id="data-policy-link">politique de protection des données</a>.
     </label>
   </div>
 </div>
@@ -480,8 +480,206 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });</script>
 	
+<!--<script>
+  // Function to get URL parameters
+  function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
 
+  // Function to load form values from localStorage
+  function loadFormValues() {
+    const storedValues = JSON.parse(localStorage.getItem('formValues') || '{}');
+    const form = document.querySelector('.php-email-form'); // Adjust if your form has a different class or ID
+    if (form) {
+      for (const [name, value] of Object.entries(storedValues)) {
+        const field = form.querySelector(`[name="${name}"]`);
+        if (field) {
+          if (field.type === 'checkbox') {
+            // Handle arrays of checkbox values
+            const values = Array.isArray(value) ? value : [value];
+            field.checked = values.includes(field.value);
+          } else {
+            field.value = value;
+          }
+        }
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the policy was accepted
+    if (getQueryParam('policyAccepted') === 'true') {
+      document.getElementById('data-protection-checkbox').checked = true;
+    }
+
+    // Load form values from localStorage
+    loadFormValues();
+  });
+
+  // Save form values to localStorage before submitting
+ document.querySelector('.php-email-form').addEventListener('submit', function() {
+    const formValues = {};
+    const formData = new FormData(this);
+    formData.forEach((value, key) => {
+      if (formValues[key]) {
+        if (!Array.isArray(formValues[key])) {
+          formValues[key] = [formValues[key]];
+        }
+        formValues[key].push(value);
+      } else {
+        formValues[key] = value;
+      }
+    });
+    localStorage.setItem('formValues', JSON.stringify(formValues));
+  });
+</script>-->
 	
+	<!--<script>
+  // Function to save form values to localStorage
+  function saveFormValues() {
+    const form = document.querySelector('.php-email-form');
+    const formValues = {};
+    const formData = new FormData(form);
+    formData.forEach((value, key) => {
+      if (formValues[key]) {
+        if (!Array.isArray(formValues[key])) {
+          formValues[key] = [formValues[key]];
+        }
+        formValues[key].push(value);
+      } else {
+        formValues[key] = value;
+      }
+    });
+    localStorage.setItem('formValues', JSON.stringify(formValues));
+  }
+
+  // Save form values to localStorage when clicking on the data policy link
+  document.getElementById('data-policy-link').addEventListener('click', function(event) {
+    saveFormValues();
+  });
+
+  // Function to get URL parameters
+  function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  // Function to load form values from localStorage
+  function loadFormValues() {
+    const storedValues = JSON.parse(localStorage.getItem('formValues') || '{}');
+    const form = document.querySelector('.php-email-form');
+    if (form) {
+      for (const [name, value] of Object.entries(storedValues)) {
+        const field = form.querySelector(`[name="${name}"]`);
+        if (field) {
+          if (field.type === 'checkbox') {
+            // Handle arrays of checkbox values
+            const values = Array.isArray(value) ? value : [value];
+            field.checked = values.includes(field.value);
+          } else {
+            field.value = value;
+          }
+        }
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the policy was accepted
+    if (getQueryParam('policyAccepted') === 'true') {
+      document.getElementById('data-protection-checkbox').checked = true;
+    }
+
+    // Load form values from localStorage
+    loadFormValues();
+  });
+</script>-->
+	
+	<!-- Main script for form handling -->
+<script>
+  // Function to save form values to localStorage
+  function saveFormValues() {
+    const form = document.querySelector('.php-email-form');
+    const formValues = {};
+    const formData = new FormData(form);
+
+    formData.forEach((value, key) => {
+      if (formValues[key]) {
+        if (!Array.isArray(formValues[key])) {
+          formValues[key] = [formValues[key]];
+        }
+        formValues[key].push(value);
+      } else {
+        formValues[key] = value;
+      }
+    });
+
+    // Save the state of 'autre' checkbox and its input field
+    const autreCheckbox = document.getElementById('autre');
+    formValues['autreChecked'] = autreCheckbox.checked;
+    formValues['autreInput'] = document.getElementById('autre-input').value;
+
+    localStorage.setItem('formValues', JSON.stringify(formValues));
+  }
+
+  // Save form values to localStorage when clicking on the data policy link
+  document.getElementById('data-policy-link').addEventListener('click', function(event) {
+    saveFormValues();
+  });
+
+  // Function to get URL parameters
+  function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  // Function to load form values from localStorage
+  function loadFormValues() {
+    const storedValues = JSON.parse(localStorage.getItem('formValues') || '{}');
+    const form = document.querySelector('.php-email-form');
+
+    if (form) {
+      for (const [name, value] of Object.entries(storedValues)) {
+        const field = form.querySelector(`[name="${name}"]`);
+        if (field) {
+          if (field.type === 'checkbox') {
+            // Handle arrays of checkbox values
+            const values = Array.isArray(value) ? value : [value];
+            field.checked = values.includes(field.value);
+          } else {
+            field.value = value;
+          }
+        }
+      }
+
+      // Restore the state of 'autre' checkbox and its input field
+      if (storedValues['autreChecked']) {
+        const autreCheckbox = document.getElementById('autre');
+        const autreInput = document.getElementById('autre-input');
+        
+        autreCheckbox.checked = storedValues['autreChecked'];
+        autreInput.value = storedValues['autreInput'];
+
+        if (autreCheckbox.checked) {
+          autreInput.classList.remove('d-none');
+        } else {
+          autreInput.classList.add('d-none');
+        }
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the policy was accepted
+    if (getQueryParam('policyAccepted') === 'true') {
+      document.getElementById('data-protection-checkbox').checked = true;
+    }
+
+    // Load form values from localStorage
+    loadFormValues();
+  });
+</script>
 </body>
 
 </html>
