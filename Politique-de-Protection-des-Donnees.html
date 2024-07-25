@@ -1,4 +1,4 @@
-de<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,9 +13,9 @@ de<!DOCTYPE html>
   <!--link href="assets/img/Logo Graphics/1x/favicon.png" rel="icon">
   <link href="assets/img/favicon.png" rel="apple-touch-icon">-->
 
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google Fonts -->
@@ -52,7 +52,7 @@ de<!DOCTYPE html>
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo">
-        <img src="assets/img/GDT LOGO ELEMENTS_LOGO LIGHT 1 .gif" alt="" width="100px">
+        <img src="assets/img/logo/gdt-logo.gif" alt="" width="100px">
       </a>
     
 
@@ -151,6 +151,14 @@ Email : gdbois74@gmail.com<br>
 Téléphone : +33 6 60 23 00 06<br>
         
       </div>
+		
+		<div class="form-group mt-3">
+      <input type="checkbox" id="accept-policy-checkbox">
+      <label for="accept-policy-checkbox">I have read and accept the data protection policy.</label>
+    </div>
+    <button onclick="acceptPolicy()">Accept and Return to Form</button>
+  </div>
+	  
     </section>
 
   </main><!-- End #main -->
@@ -164,7 +172,7 @@ Téléphone : +33 6 60 23 00 06<br>
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
 				
-              <p><img src="assets/img/Logo Graphics/1x/LOGO LIGHT 1.png" class="footer-image"></p>
+              <p><img src="assets/img/logo/logo-colour.png" class="footer-image"></p>
               <p> </p>
 				 <br>
               
@@ -244,11 +252,23 @@ Téléphone : +33 6 60 23 00 06<br>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+	<script>
+  function acceptPolicy() {
+    if (document.getElementById('accept-policy-checkbox').checked) {
+      localStorage.setItem('policyAccepted', 'true');
+      // Redirect to the form page with a URL parameter indicating acceptance
+      window.location.href = 'formulaire-de-devis.html?policyAccepted=true';
+    } else {
+      alert('Please accept the policy to proceed.');
+    }
+  }
+</script>
+	
 </body>
 
 </html>
