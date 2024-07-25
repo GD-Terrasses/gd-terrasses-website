@@ -375,69 +375,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 	
-<!--<script>
-	document.addEventListener('DOMContentLoaded', function () {
-  var x, i, j, selElmnt, a, b, c;
-  /* Look for any elements with the class "custom-select": */
-  x = document.getElementsByClassName("custom-select");
-  for (i = 0; i < x.length; i++) {
-    selElmnt = x[i].getElementsByTagName("select")[0];
-    /* For each element, create a new DIV that will act as the selected item: */
-    a = document.createElement("DIV");
-    a.setAttribute("class", "select-selected");
-    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-    x[i].appendChild(a);
-    /* For each element, create a new DIV that will contain the option items: */
-    b = document.createElement("DIV");
-    b.setAttribute("class", "select-items select-hide");
-    for (j = 1; j < selElmnt.length; j++) {
-      /* Create a new DIV for each option: */
-      c = document.createElement("DIV");
-      c.innerHTML = selElmnt.options[j].innerHTML;
-      c.addEventListener("click", function () {
-        var y, i, k, s, h;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < s.length; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            for (k = 0; k < y.length; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-      });
-      b.appendChild(c);
-    }
-    x[i].appendChild(b);
-    a.addEventListener("click", function () {
-      /* When the select box is clicked, close any other select boxes, and open/close the current select box: */
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-  }
-});
-	
-	</script>-->
-	<!--<script>
-		$(document).ready(function() {
-  // Initialize Select2 on select elements
-  $('#service').select2({
-    placeholder: "Veuillez sélectionner un service",
-    width: '100%' // Make sure it spans the full width of its container
-  });
 
-  $('#type').select2({
-    placeholder: "Veuillez sélectionner un type de structure",
-    width: '100%' // Make sure it spans the full width of its container
-  });
-});
-	</script>-->
 	<script>document.addEventListener('DOMContentLoaded', function () {
   var x, i, selElmnt, a, b, c;
   x = document.getElementsByClassName("custom-select");
@@ -651,7 +589,12 @@ document.addEventListener('DOMContentLoaded', function () {
           if (field.type === 'checkbox') {
             // Handle arrays of checkbox values
             const values = Array.isArray(value) ? value : [value];
-            field.checked = values.includes(field.value);
+            values.forEach(val => {
+              const checkbox = form.querySelector(`[name="${name}"][value="${val}"]`);
+              if (checkbox) {
+                checkbox.checked = true;
+              }
+            });
           } else {
             field.value = value;
           }
@@ -682,26 +625,54 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+    // Clear localStorage on page load unless returning from policy page
+    if (localStorage.getItem('returningFromPolicy') !== 'true') {
+      localStorage.removeItem('formValues');
+      localStorage.removeItem('policyAccepted');
+      localStorage.removeItem('returningFromPolicy');
+      document.getElementById('data-protection-checkbox').checked = false;
+    } else {
+      loadFormValues();
+      localStorage.removeItem('returningFromPolicy');
+    }
+
     // Check if the policy was accepted
     if (getQueryParam('policyAccepted') === 'true') {
       document.getElementById('data-protection-checkbox').checked = true;
     }
 
-    // Load form values from localStorage if returning from the data policy page
-    if (localStorage.getItem('returningFromPolicy') === 'true') {
-      localStorage.removeItem('returningFromPolicy');
-      loadFormValues();
-    } else {
-      // Clear localStorage on page load if not returning from the data policy page
-      localStorage.removeItem('formValues');
-    }
+    // Clear the data protection checkbox on page refresh
+    window.addEventListener('beforeunload', function() {
+		localStorage.removeItem('formValues');
+  		localStorage.removeItem('policyAccepted');
+      document.getElementById('data-protection-checkbox').checked = false;
+    });
   });
 
   // Clear localStorage on form submission
   document.querySelector('.php-email-form').addEventListener('submit', function() {
     localStorage.removeItem('formValues');
+    localStorage.removeItem('policyAccepted');
+    localStorage.removeItem('returningFromPolicy');
   });
 </script>
+	
+	 <script>
+        function removeQueryString() {
+            // Get the current URL
+            const url = new URL(window.location.href);
+            // Check if the query parameter exists
+            if (url.searchParams.has('policyAccepted')) {
+                // Remove the query parameter
+                url.searchParams.delete('policyAccepted');
+                // Update the URL without reloading the page
+                window.history.replaceState({}, document.title, url.pathname + url.search);
+            }
+        }
+
+        // Call the function when the page loads
+        window.addEventListener('load', removeQueryString);
+    </script>
 </body>
 
 </html>
