@@ -1264,7 +1264,9 @@ section {
   margin: 10px 0;
   text-align: right;
 }
-
+.policy-actions .accept {
+  margin-left: 10px; /* Space between checkbox and text */
+}
 #datapolicy .policy-actions .button-container {
   text-align: right;
 }
@@ -1289,7 +1291,15 @@ section {
   color: #fff;
   text-decoration: none;
 	border: 2px solid #e6635a;
-
+}
+@media (max-width: 600px) {
+	#datapolicy .policy-actions .accept {
+		fontsize: 8px;
+	}
+	#datapolicy .policy-actions .button-container {
+		display: flex;
+		justify-content: center;
+	}
 }
 /*--------------------------------------------------------------
 # Counts
