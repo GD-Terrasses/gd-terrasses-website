@@ -1820,7 +1820,6 @@ section {
 .filter-active {
   font-weight: bold;
   background-color: none;
-	text-decoration: underline;
 	letter-spacing: 0.09em;
 	transition: all ease-in-out 0.3s;
 }
@@ -1978,6 +1977,7 @@ section {
   background: #1E4133;
   margin: 4px 10px;
 }
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -2295,11 +2295,31 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column .info-box,
+.flex-column .php-email-form {
+  flex: 1;
+}
+
+/* Ensure that flex items have equal height */
+.flex-column {
+  flex-grow: 1;
+}
+
 .contact .info-box {
   color: #0b2341;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
+  padding: 20px 0 37.5px 0;
   background: #fff;
 }
 
