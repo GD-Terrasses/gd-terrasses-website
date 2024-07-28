@@ -847,76 +847,87 @@
 
         <div class="row flex-container">
 
-          <div class="col-lg-6 flex-column">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
-                  <p>1748 Rue du Leman, 
-					  <br>74140 Chens-Sur-Leman, 
-					  <br>FRANCE</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>E-mail</h3>
-                  <p>gdbois74@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Appellez-nous</h3>
-                  <p>+33 6 60 23 00 06<br></p>
-                </div>
-              </div>
+          <!-- Swapped Columns -->
+      <div class="col-lg-6">
+        <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
+          <input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
+          <input type="hidden" name="redirectTo" value="https://jonsumera.github.io/page-de-remerciement.html">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
             </div>
-
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+            </div>
           </div>
+          <!-- Honeypot Field -->
+          <div style="display:none;">
+            <input type="text" name="honeypot" value="">
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <!-- Google reCAPTCHA -->
+          <!--<div class="g-recaptcha" data-sitekey="6LdE8BMqAAAAABbrI__nbT12Jmccgg7YjT5L1Qg6"></div>-->
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Envoyer</button></div>
+        </form>
+      </div>
 
-          <div class="col-lg-6">
-            <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
-				<input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
-				<input type="hidden" name="redirectTo" value="https://jonsumera.github.io/page-de-remerciement.html">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
-                </div>
-              </div>
-				<!-- Honeypot Field -->
-    <div style="display:none;">
-        <input type="text" name="honeypot" value="">
+      <div class="col-lg-6 flex-column">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Adresse</h3>
+              <p>1748 Rue du Leman,
+                <br>74140 Chens-Sur-Leman,
+                <br>FRANCE</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-envelope"></i>
+              <h3>E-mail</h3>
+              <p>gdbois74@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Appellez-nous</h3>
+              <p>+33 6 60 23 00 06<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-				
-				<!-- Google reCAPTCHA -->
-    <!--<div class="g-recaptcha" data-sitekey="6LdE8BMqAAAAABbrI__nbT12Jmccgg7YjT5L1Qg6"></div>-->
-    
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Envoyer</button></div>
-            </form>
-          </div>
 
+  </div>
+    </section><!-- End Contact Section -->
+
+	  
+	  <!-- ======= Cta Section ======= -->
+    <section id="ctab" class="ctab">
+      <div class="container" data-aos="zoom-in" style="max-width: 600px; margin: 0 auto; text-align: justify;">
+
+        <div class="text-center">
+          <h3>Demandez un Devis</h3>
+          <p> Prêt à démarrer votre projet ? <br>Contactez-nous dès maintenant pour un devis gratuit !</p>
+          <a class="ctab-btn" href="formulaire-de-devis.html">Devis Gratuit</a>
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
-
+    </section><!-- End Cta Section -->
+	  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
