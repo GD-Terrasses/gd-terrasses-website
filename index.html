@@ -852,6 +852,22 @@
         <form action="https://api.staticforms.xyz/submit" method="post" role="form" class="php-email-form">
           <input type="hidden" name="accessKey" value="fa11aa0c-9cb7-4af9-9ef1-286002c32e7e">
           <input type="hidden" name="redirectTo" value="https://jonsumera.github.io/page-de-remerciement.html">
+			
+			 <!-- Email Template Configuration -->
+        <input type="hidden" name="emailTo" value="jon.sumera@gmail.com">
+        <input type="hidden" name="emailSubject" value="New Contact Form Submission">
+        <input type="hidden" name="emailMessage" value="
+             <h1 style='color: #333; font-family: Arial, sans-serif;'>New Contact Form Submission</h1>
+            <div style='margin: 20px 0; font-family: Arial, sans-serif; color: #555;'>
+                <p><strong>Name:</strong> <span style='background-color: #f0f0f0; padding: 5px;'>{{name}}</span></p>
+                <p><strong>Email:</strong> <span style='background-color: #f0f0f0; padding: 5px;'>{{email}}</span></p>
+                <p><strong>Subject:</strong> <span style='background-color: #f0f0f0; padding: 5px;'>{{subject}}</span></p>
+                <p><strong>Message:</strong> <span style='background-color: #f0f0f0; padding: 5px;'>{{message}}</span></p>
+                <p><strong>Submitted on:</strong> {{date}}</p>
+                <p><strong>IP Address:</strong> {{ip}}</p>
+            </div>
+        ">
+			
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
