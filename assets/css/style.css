@@ -2039,7 +2039,60 @@ section {
   background: #1E4133;
   margin: 4px 10px;
 }
+ .filter-container {
+            margin-bottom: 30px; /* Increased margin */
+            text-align: right; /* Align to the right */
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Vertically center items */
+        }
+        .filter-icon {
+            font-size: 1em; /* Size of the filter icon */
+            margin-right: 10px; /* Space between the icon and the select box */
+			 cursor: pointer; /* Change cursor to indicate clickability */
+			color: lightgrey;
+		}
+			 .filter-icon:hover {
+            color: #1e81b0; /* Change color on hover */
+        }
+        #portfolio-filters {
+            width: 300px; /* Width of the select box */
+            text-align: left; /* Align text inside select box to the left */
+            text-align-last: left; /* Align the dropdown arrow to the left */
+        }
+        .select2-container--default .select2-selection--single {
+            border: none; /* Remove border */
+            border-radius: 0; /* Remove border radius */
+            background-color: #f8f9fa; /* Optional: change background color */
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            text-align: left; /* Align Select2 selected text to the left */
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 10px; /* Adjust the arrow position */
+        }
+        .select2-dropdown {
+            border: 1px solid #ced4da; /* Optional: border for dropdown */
+            border-radius: 0; /* Remove border radius */
+        }
+        .select2-results__option--highlighted {
+            background-color: #47705E !important; /* Highlight color */
+            color: white !important; /* Text color of highlighted item */
+        }
+ /* Remove border and outline from the search input field within Select2 dropdown */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: none !important; /* Remove border */
+    box-shadow: none !important; /* Remove box shadow */
+    outline: none !important; /* Remove outline */
+    border-radius: 0 !important; /* Remove border radius if any */
+}
 
+/* Remove blue border when the search input field is focused */
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
