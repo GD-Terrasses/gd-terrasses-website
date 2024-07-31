@@ -106,13 +106,20 @@
 			  <i class="fas fa-filter filter-icon"></i>
              <select id="portfolio-filters" class="form-control" style="width: 300px;">
             <option value="*" selected>All</option>
-            <option value=".filter-terrasses">Terrasses</option>
+				 <optgroup label="Service">
+					 <option value=".filter-create">Création</option>
+            		 <option value=".filter-reno">Rénovation</option>
+            		 <option value=".filter-entre">Entretien</option>
+				 </optgroup>
+				 <optgroup label="Structure">
+					 <option value=".filter-terrasses">Terrasses</option>
+					 <option value=".filter-other">Autre</option>
+				 </optgroup>
+            	 <optgroup label="Travail du Bois">
             <option value=".filter-charp">Charpenterie</option>
             <option value=".filter-menu">Menuiserie</option>
-            <option value=".filter-create">Création</option>
-            <option value=".filter-reno">Rénovation</option>
-            <option value=".filter-entre">Entretien</option>
-            <option value=".filter-other">Autre</option>
+            	</optgroup>
+            
         </select>
     </div>
 </div>

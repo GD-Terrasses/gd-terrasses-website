@@ -2093,6 +2093,41 @@ section {
     box-shadow: none !important;
     outline: none !important;
 }
+/* Custom styling for optgroup labels */
+.select2-container--default .select2-results__group {
+    display: flex;
+    align-items: center; /* Center items vertically */
+	font-size: 0.875em; /* Adjust the font size as needed */
+    font-weight: normal; /* Remove bold styling */
+    color: #6c757d; /* Optional: Change the color if desired */
+    text-align: center; /* Center align the text */
+    position: relative; /* Position relative for line placement */
+    margin: 5px 0; /* Add some margin */
+    padding: 5px; /* Remove padding */
+	letter-spacing: 2px;
+}
+
+.select2-container--default .select2-results__group::before,
+.select2-container--default .select2-results__group::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #9A9A9A; /* Same color as the text */
+}
+
+.select2-container--default .select2-results__group::before {
+    left: 10px;
+	margin-right: 10px; /* Space between line and text */
+}
+
+.select2-container--default .select2-results__group::after {
+    right: 10px;
+	margin-left: 10px; /* Space between line and text */
+}
+/* Add padding to the selected item in the Select2 select box */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 10px; /* Adjust the padding values as needed */
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
