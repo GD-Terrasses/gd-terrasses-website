@@ -1050,7 +1050,22 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 	
-	
+	<script>
+  function updateAOS() {
+    const videoBox = document.querySelector('.video-box');
+    if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
+      videoBox.setAttribute('data-aos', 'fade-up');
+    } else {
+      videoBox.setAttribute('data-aos', 'fade-left');
+    }
+  }
+
+  // Run the function on page load
+  document.addEventListener('DOMContentLoaded', updateAOS);
+
+  // Run the function on window resize
+  window.addEventListener('resize', updateAOS);
+</script>
 
 </body>
 

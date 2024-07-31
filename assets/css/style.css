@@ -2046,6 +2046,11 @@ section {
             justify-content: flex-end; /* Align items to the right */
             align-items: center; /* Vertically center items */
         }
+ @media (max-width: 767px) {
+            .filter-container {
+                justify-content: flex-start;
+            }
+        }
         .filter-icon {
             font-size: 1em; /* Size of the filter icon */
             margin-right: 10px; /* Space between the icon and the select box */
@@ -2116,12 +2121,12 @@ section {
 }
 
 .select2-container--default .select2-results__group::before {
-    left: 10px;
+    left: 20px;
 	margin-right: 10px; /* Space between line and text */
 }
 
 .select2-container--default .select2-results__group::after {
-    right: 10px;
+    right: 20px;
 	margin-left: 10px; /* Space between line and text */
 }
 /* Add padding to the selected item in the Select2 select box */
