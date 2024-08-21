@@ -2795,7 +2795,7 @@ footer a {
         color: #e6635a; /* Change this to your desired hover color */
         text-decoration: none; /* Optional: adds underline on hover */
     }
-a[href^="tel"] {
+#footer a[href^="tel"] {
     color: white; /* or any other color that contrasts with your background */
     text-decoration: none; /* Optional: Removes underline if you don't want it */
 }
