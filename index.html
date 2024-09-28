@@ -73,7 +73,7 @@
           <li><a class="getstarted scrollto" href="#contact">Nous Contacter</a></li>
         <!-- Language Selector -->
     <li class="dropdown language-selector">
-      <a href="#" class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
+      <a class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
       <ul>
         <li><a href="index.html">FR</a></li>
         <li><a href="index-en.html">EN</a></li>
@@ -1116,7 +1116,21 @@ document.getElementById('languageSelector').addEventListener('change', function(
     window.location.href = event.target.value;
 });
 </script>
+	
+	<script>
+  // Add event listener to the language dropdown toggle
+  document.getElementById('languageDropdown').addEventListener('click', function(event) {
+    event.preventDefault(); // Ensure no default action is triggered
+    const dropdownMenu = document.querySelector('.language-selector ul');
 
+    // Toggle the visibility of the dropdown menu
+    if (dropdownMenu.style.display === 'block') {
+      dropdownMenu.style.display = 'none';
+    } else {
+      dropdownMenu.style.display = 'block';
+    }
+  });
+</script>
 </body>
 
 </html>

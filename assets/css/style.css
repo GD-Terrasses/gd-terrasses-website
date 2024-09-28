@@ -428,7 +428,10 @@ span2{
 .language-selector {
   margin-left: 20px; /* Add space between the language selector and the Contact Us button */
 }
-
+/* Force the cursor to be a pointer (hand icon) when hovering over the dropdown */
+  .language-selector a {
+    cursor: pointer; /* Forces the correct cursor style */
+  }
 .language-selector a.nav-link {
   padding: 5px 10px; /* Reduce padding around the text */
   font-size: 14px; /* Reduce font size */

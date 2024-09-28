@@ -73,7 +73,7 @@
           <li><a class="getstarted scrollto" href="#contact">Contact Us</a></li>
 	 <!-- Language Selector -->
     <li class="dropdown language-selector">
-      <a href="#" class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
+      <a class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
       <ul>
         <li><a href="index.html">FR</a></li>
         <li><a href="index-en.html">EN</a></li>
@@ -943,7 +943,7 @@
         <div class="text-center">
           <h3>Get A Quote</h3>
           <p> Ready to start your project? <br>Contact us now for a Free Quote!</p>
-          <a class="ctab-btn" href="formulaire-de-devis.html">Free Quote</a>
+          <a class="ctab-btn" href="formulaire-de-devis-en.html">Free Quote</a>
         </div>
 
       </div>
@@ -997,7 +997,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="creation-guide-en.html">Creation</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="renovation-guide-en.html">Renovation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="entretien-guide-en.html">Entretien</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="entretien-guide-en.html">Maintenance</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index-en.html#contact">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="formulaire-de-devis-en.html">Free Quote</a></li>
             </ul>
@@ -1007,7 +1007,7 @@
             <h4>Our Newsletter</h4>
             <p>Subscribe to receive our latest news and updates!</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="S'abonner">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
           </div>
@@ -1115,7 +1115,21 @@ document.getElementById('languageSelector').addEventListener('change', function(
     window.location.href = event.target.value;
 });
 </script>
+	
+	<script>
+  // Add event listener to the language dropdown toggle
+  document.getElementById('languageDropdown').addEventListener('click', function(event) {
+    event.preventDefault(); // Ensure no default action is triggered
+    const dropdownMenu = document.querySelector('.language-selector ul');
 
+    // Toggle the visibility of the dropdown menu
+    if (dropdownMenu.style.display === 'block') {
+      dropdownMenu.style.display = 'none';
+    } else {
+      dropdownMenu.style.display = 'block';
+    }
+  });
+</script>
 </body>
 
 </html>
