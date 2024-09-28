@@ -70,7 +70,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto " href="index-en.html#portfolio">Portfolio</a></li>
-          <li><a class="scrollto getstarted2" href="index-en.html#contact">Free Quote</a></li>
+          <li><a class="scrollto getstarted2" href="formulaire-de-devis-en.html">Free Quote</a></li>
           <li><a class="getstarted scrollto" href="index-en.html#contact">Contact Us</a></li>
         <!-- Language Selector -->
     <li class="dropdown language-selector">
@@ -284,8 +284,8 @@
                     </div>
                 </div>
             </div>
-			<div class="backagain data-aos="fade-up"">
-				<a href="index.html#services">
+			<div class="backagain" data-aos="fade-up">
+				<a href="index-en.html#services">
 				   Back
 				</a>
             </div>
@@ -314,7 +314,7 @@
 					FRANCE<br><br></a>
                 <strong>Phone:</strong> <span>+33 6 60 23 00 06</span><br>
                 <strong>Email:</strong>  <span><a
-										   href="mailto:gdbois74@gmail.com">gdbois74@gmail.com</a></span><br>
+										   href="mailto:contact@gd-terrasses.fr">contact@gd-terrasses.fr</a></span><br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bi bi-twitter-x -twitter"></i></a>
@@ -352,7 +352,7 @@
             <h4>Our Newsletter</h4>
             <p>Subscribe to receive our latest news and updates!</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="S'abonner">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
           </div>
@@ -439,6 +439,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 		</script>
+	
+<script>
+// Function to store the current scroll position
+function storeScrollPosition() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+}
+
+// Function to retrieve and set the scroll position
+function restoreScrollPosition() {
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition !== null) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
+}
+
+// Add event listener to store scroll position just before the page unloads
+window.addEventListener('beforeunload', storeScrollPosition);
+
+// Restore the scroll position when the new page loads
+window.addEventListener('load', restoreScrollPosition);
+
+// Handle language switch and store scroll position
+document.getElementById('languageSelector').addEventListener('change', function(event) {
+    storeScrollPosition();
+    window.location.href = event.target.value;
+});
+</script>	
 </body>
 
 </html>

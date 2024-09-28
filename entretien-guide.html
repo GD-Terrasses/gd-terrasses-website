@@ -414,6 +414,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 		</script>
+	
+<script>
+// Function to store the current scroll position
+function storeScrollPosition() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+}
+
+// Function to retrieve and set the scroll position
+function restoreScrollPosition() {
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition !== null) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
+}
+
+// Add event listener to store scroll position just before the page unloads
+window.addEventListener('beforeunload', storeScrollPosition);
+
+// Restore the scroll position when the new page loads
+window.addEventListener('load', restoreScrollPosition);
+
+// Handle language switch and store scroll position
+document.getElementById('languageSelector').addEventListener('change', function(event) {
+    storeScrollPosition();
+    window.location.href = event.target.value;
+});
+</script>
 </body>
 
 </html>
