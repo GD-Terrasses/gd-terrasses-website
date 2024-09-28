@@ -63,10 +63,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Acceuil</a></li>
-		  <li class="dropdown"><a href="#"><span>Qui sommes nous?</span></a>
+		  <li class="dropdown"><a href="#"><span>Qui sommes nous ?</span></a>
             <ul>
 			  <li><a class="nav-link scrollto" href="index.html#about">À propos de nous</a></li>
-              <li><a class="nav-link scrollto" href="index.html#why-us">Pourquoi nous</a></li>
+              <li><a class="nav-link scrollto" href="index.html#why-us">Pourquoi nous ?</a></li>
 			  <li><a class="nav-link scrollto" href="index.html#services">Nos services</a></li>
 			  <!--<li><a class="nav-link scrollto" href="index.html#testimonials">Témoignages</a></li>-->
             </ul>
@@ -74,7 +74,15 @@
           <li><a class="nav-link scrollto " href="index.html#portfolio">Nos Réalisations</a></li>
           <li><a class="scrollto getstarted2" href="formulaire-de-devis.html">Devis Gratuit</a></li>
           <li><a class="getstarted scrollto" href="index.html#contact">Nous Contacter</a></li>
-        </ul>
+         <!-- Language Selector -->
+    <li class="dropdown language-selector">
+      <a href="#" class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
+      <ul>
+        <li><a href="portfolio.html">FR</a></li>
+        <li><a href="portfolio-en.html">EN</a></li>
+      </ul>
+    </li>
+		  </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -97,8 +105,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Consultez notre portfolio</p>
+          <h2>Galerie</h2>
+          <p>Consultez nos réalisations</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -464,6 +472,21 @@
             });
         });
     </script>
-	
+
+	<script>document.addEventListener("DOMContentLoaded", function() {
+  // Get the current URL
+  var currentUrl = window.location.href;
+
+  // Get the element for displaying the current language in the dropdown
+  var currentLanguage = document.getElementById("currentLanguage");
+
+  // Check if the current page is the English version (portfolio-en.html) or French (portfolio.html)
+  if (currentUrl.includes("portfolio-en.html")) {
+    currentLanguage.textContent = "EN"; // Set the default to English if on English page
+  } else {
+    currentLanguage.textContent = "FR"; // Default to French for the French page
+  }
+});
+		</script>
 </body>
 </html>

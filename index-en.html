@@ -69,11 +69,17 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="portfolio-en.html">Portfolio</a></li>
-          <li><a class="scrollto getstarted2" href="formulaire-de-devis.html">Free Quote</a></li>
+          <li><a class="scrollto getstarted2" href="formulaire-de-devis-en.html">Free Quote</a></li>
           <li><a class="getstarted scrollto" href="#contact">Contact Us</a></li>
-	
-    </ul>
-		  
+	 <!-- Language Selector -->
+    <li class="dropdown language-selector">
+      <a href="#" class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
+      <ul>
+        <li><a href="index.html">FR</a></li>
+        <li><a href="index-en.html">EN</a></li>
+      </ul>
+    </li>
+		  </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -989,11 +995,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="creation-guide.html">Creation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="renovation-guide.html">Renovation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="entretien-guide.html">Entretien</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#contact">Contact Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="formulaire-de-devis.html">Free Quote</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="creation-guide-en.html">Creation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="renovation-guide-en.html">Renovation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="entretien-guide-en.html">Entretien</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index-en.html#contact">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="formulaire-de-devis-en.html">Free Quote</a></li>
             </ul>
           </div>
 
@@ -1067,6 +1073,21 @@
   window.addEventListener('resize', updateAOS);
 </script>
 
+	<script>document.addEventListener("DOMContentLoaded", function() {
+  // Get the current URL
+  var currentUrl = window.location.href;
+
+  // Get the element for displaying the current language in the dropdown
+  var currentLanguage = document.getElementById("currentLanguage");
+
+  // Check if the current page is the English version (index-en.html) or French (index.html)
+  if (currentUrl.includes("index-en.html")) {
+    currentLanguage.textContent = "EN"; // Set the default to English if on English page
+  } else {
+    currentLanguage.textContent = "FR"; // Default to French for the French page
+  }
+});
+		</script>
 </body>
 
 </html>

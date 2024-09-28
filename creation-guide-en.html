@@ -72,7 +72,15 @@
           <li><a class="nav-link scrollto " href="index-en.html#portfolio">Portfolio</a></li>
           <li><a class="scrollto getstarted2" href="index-en.html#contact">Free Quote</a></li>
           <li><a class="getstarted scrollto" href="index-en.html#contact">Contact Us</a></li>
-        </ul>
+        <!-- Language Selector -->
+    <li class="dropdown language-selector">
+      <a href="#" class="nav-link"><span id="currentLanguage">FR</span> <i class="bi bi-chevron-down"></i></a>
+      <ul>
+        <li><a href="creation-guide.html">FR</a></li>
+        <li><a href="creation-guide-en.html">EN</a></li>
+      </ul>
+    </li>
+		  </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -415,7 +423,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-	
+
+	<script>document.addEventListener("DOMContentLoaded", function() {
+  // Get the current URL
+  var currentUrl = window.location.href;
+
+  // Get the element for displaying the current language in the dropdown
+  var currentLanguage = document.getElementById("currentLanguage");
+
+  // Check if the current page is the English version (creation-guide-en.html) or French (creation-guide.html)
+  if (currentUrl.includes("creation-guide-en.html")) {
+    currentLanguage.textContent = "EN"; // Set the default to English if on English page
+  } else {
+    currentLanguage.textContent = "FR"; // Default to French for the French page
+  }
+});
+		</script>
 </body>
 
 </html>

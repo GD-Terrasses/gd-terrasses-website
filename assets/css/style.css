@@ -424,17 +424,59 @@ span2{
   left: 100%;
   visibility: visible;
 }
+/* Adjusting the language selector */
+.language-selector {
+  margin-left: 20px; /* Add space between the language selector and the Contact Us button */
+}
 
+.language-selector a.nav-link {
+  padding: 5px 10px; /* Reduce padding around the text */
+  font-size: 14px; /* Reduce font size */
+  width: auto; /* Ensure it fits the content */
+}
+
+.language-selector ul {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 5px;
+  list-style: none;
+  width: 80px; /* Set a smaller width */
+  border-radius: 5px;
+}
+
+.language-selector:hover ul {
+  display: block;
+}
+
+.language-selector ul li {
+  margin: 0;
+  padding: 5px 10px; /* Smaller padding for each option */
+}
+
+.language-selector ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size */
+}
+
+.language-selector ul li a:hover {
+  color: #e6635a !important; /* Change color on hover */
+}
+
+/* Reduce the size of the dropdown arrow icon */
+.language-selector .bi-chevron-down {
+  font-size: 12px; /* Smaller arrow icon */
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
   .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
-}
-
+    left: -100%;  
+	}
+}	
 /**
 * Mobile Navigation 
 */
