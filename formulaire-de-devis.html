@@ -62,7 +62,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html#hero">Acceuil</a></li>
-		  <li class="dropdown"><a href="#"><span>Qui sommes nous ?</span></a>
+		  <li class="dropdown"><a href="#" id="aboutDropdown"><span>Qui sommes nous ?</span></a>
             <ul>
 			  <li><a class="nav-link scrollto" href="index.html#about">À propos de nous</a></li>
               <li><a class="nav-link scrollto" href="index.html#why-us">Pourquoi nous ?</a></li>
@@ -562,6 +562,12 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('load', removeQueryString);
 </script>
 
+	<script>
+  // Prevent the page from scrolling to the top when clicking on the dropdown
+  document.getElementById('aboutDropdown').addEventListener('click', function(event) {
+    event.preventDefault(); // Stop the default action
+  });
+</script>
 </body>
 
 </html>

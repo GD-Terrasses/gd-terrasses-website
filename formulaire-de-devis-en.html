@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Obtenez un Devis Gratuit | GD TERRASSES</title>
+  <title>Get a Free Quote | GD TERRASSES</title>
   <meta content="Contact GD TERRASSES to get a free quote for the creation, renovation or maintenance of your wooden terrace. Fill out our online quote form now." name="description">
   <meta content="GD TERRASSES, free quote, quote form, wooden terraces, terrace creation, terrace renovation, terrace maintenance, contact, France" name="keywords">
 
@@ -62,7 +62,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index-en.html#hero">Home</a></li>
-		  <li class="dropdown"><a href="#"><span>Who are we?</span></a>
+		  <li class="dropdown"><a href="#" id="aboutDropdown"><span>Who are we?</span></a>
             <ul>
 			  <li><a class="nav-link scrollto" href="index-en.html#about">About Us</a></li>
               <li><a class="nav-link scrollto" href="index-en.html#why-us">Why Us?</a></li>
@@ -562,6 +562,12 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('load', removeQueryString);
 </script>
 
+	<script>
+  // Prevent the page from scrolling to the top when clicking on the dropdown
+  document.getElementById('aboutDropdown').addEventListener('click', function(event) {
+    event.preventDefault(); // Stop the default action
+  });
+</script>
 </body>
 
 </html>
