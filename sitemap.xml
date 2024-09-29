@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Main Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/index.html</loc>
+     <changefreq>weekly</changefreq>
+     <priority>1.0</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/index-en.html</loc>
+     <changefreq>weekly</changefreq>
+     <priority>1.0</priority>
+   </url>
+
+   <!-- Gallery Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/portfolio.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/portfolio-en.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+
+   <!-- Project Details Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-escalier-1.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-escalier-2.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-1.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-2.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-3.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-4.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-5.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-piscine-1.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/galerie-terrasse-piscine-2.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+
+   <!-- Services Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/creation-guide.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/creation-guide-en.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/renovation-guide.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/renovation-guide-en.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/entretien-guide.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/entretien-guide-en.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+   </url>
+
+   <!-- Form Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/formulaire-de-devis.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.9</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/formulaire-de-devis-en.html</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.9</priority>
+   </url>
+
+   <!-- Data Protection Notice -->
+   <url>
+     <loc>https://gd-terrasses.fr/politique-de-protection-des-donnees.html</loc>
+     <changefreq>yearly</changefreq>
+     <priority>0.5</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/politique-de-protection-des-donnees-en.html</loc>
+     <changefreq>yearly</changefreq>
+     <priority>0.5</priority>
+   </url>
+
+   <!-- Thank You Pages -->
+   <url>
+     <loc>https://gd-terrasses.fr/page-de-remerciement.html</loc>
+     <changefreq>yearly</changefreq>
+     <priority>0.4</priority>
+   </url>
+   <url>
+     <loc>https://gd-terrasses.fr/page-de-remerciement-en.html</loc>
+     <changefreq>yearly</changefreq>
+     <priority>0.4</priority>
+   </url>
+</urlset>
