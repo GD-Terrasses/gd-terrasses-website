@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /page-de-remerciement-en.html
+Disallow: /formulaire-de-devis-en.html
 
 Sitemap: https://gd-terrasses.fr/sitemap.xml
