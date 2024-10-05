@@ -1630,9 +1630,10 @@ section {
 }
 @media only screen and (max-width: 768px) {
   #why-us .video-box {
-    background-image: url('assets/img/propos/pourquoi_nous-media.jpg');
+    background-image: url('assets/img/propos/pourquoi_nous_media.jpg') !important;
   }
 }
+
 /*--------------------------------------------------------------
 # Services 1
 --------------------------------------------------------------*/
