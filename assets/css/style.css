@@ -1597,12 +1597,6 @@ section {
     pointer-events: none;
 	 
 }
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
-    .video-box::before {
-        background: linear-gradient(to bottom, rgba(246, 249, 253, 0) 40%, rgba(246, 249, 253, 1) 100%);
-    }
-}
 @media (max-width: 1024px) {
 
   .why-us .content,
