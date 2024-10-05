@@ -5,4 +5,6 @@ Disallow: /inner-page.html
 Disallow: /Test.html
 Disallow: /portfolio-details.html
 
+Allow: /sitemap.xml
+
 Sitemap: https://gd-terrasses.fr/sitemap.xml
