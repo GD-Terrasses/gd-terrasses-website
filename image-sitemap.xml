@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1 
                             http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
 
-    <!-- URL Entry for Page 1 -->
+    <!-- URL Entry for Main Page (French) -->
     <url>
         <loc>https://gd-terrasses.fr/</loc>
 		<image:image>
@@ -38,48 +38,48 @@
             <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/escalier_1/escalier_1-02.jpg</image:loc>
+            <image:caption>Escalier extérieur en bois menant au premier étage d'une maison typique de Haute Savoie, avec revêtement en bois et feuillage luxuriant</image:caption>
+            <image:title>Escalier extérieur en bois menant au premier étage d'une maison typique de Haute Savoie, avec revêtement en bois et feuillage luxuriant</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_1/terrasse_1-09.jpg</image:loc>
+            <image:caption>Terrasse extérieure sur mesure, magnifiquement rénovée pour un espace extérieur élégant.</image:caption>
+            <image:title>Terrasse extérieure sur mesure, magnifiquement rénovée pour un espace extérieur élégant.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_2/terrasse_2-01.jpg</image:loc>
+            <image:caption>Terrasse en bois exotique avec fixation discrète par vis à tête réduite et habillage de pot de fleurs en bois sur mesure.</image:caption>
+            <image:title>Terrasse en bois exotique avec fixation discrète par vis à tête réduite et habillage de pot de fleurs en bois sur mesure.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_3/terrasse_3_back-1.jpg</image:loc>
+            <image:caption>Terrasse en composite sur plots dans un jardin, conçue pour un espace de restauration en plein air.</image:caption>
+            <image:title>Terrasse en composite sur plots dans un jardin, conçue pour un espace de restauration en plein air.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine_2/terrasse_piscine_2-4.jpg</image:loc>
+            <image:caption>Terrasse en ipé autour d'une piscine, intégrée dans un jardin luxuriant.</image:caption>
+            <image:title>Terrasse en ipé autour d'une piscine, intégrée dans un jardin luxuriant.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_4/terrasse_4-3.jpg</image:loc>
+            <image:caption>Nouvelles lames de terrasse en bois exotique posées sur une structure rénovée, alliant charme ancien et solidité.</image:caption>
+            <image:title>Nouvelles lames de terrasse en bois exotique posées sur une structure rénovée, alliant charme ancien et solidité.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/escalier_2/escalier_2-07.jpg</image:loc>
+            <image:caption>Escalier magnifiquement conçu en bois de Douglas et de Mélèze, offrant un look rustique et raffiné.</image:caption>
+            <image:title>Escalier magnifiquement conçu en bois de Douglas et de Mélèze, offrant un look rustique et raffiné.</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
-            <image:caption>Une vue rapprochée d'une terrasse extérieure élégante au bord d'une piscine scintillante, avec des marches en béton symétriques menant à l'eau, créant une atmosphère paisible pour la détente.</image:caption>
-            <image:title>Terrasse extérieure élégante au bord d'une piscine avec des marches symétriques</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_5/terrasse_5-1.jpg</image:loc>
+            <image:caption>Rénovation de la terrasse existante pour un espace extérieur amélioré.</image:caption>
+            <image:title>Rénovation de la terrasse existante pour un espace extérieur amélioré.</image:title>
         </image:image>
     </url>
 
-    <!-- URL Entry for Page 2 -->
+    <!-- URL Entry for Main Page (English) -->
     <url>
         <loc>https://gd-terrasses.fr/index-en</loc>
 		<image:image>
@@ -108,13 +108,53 @@
             <image:title> Man Installing Exterior Uplights on Outdoor Swimming Pool Deck</image:title>
         </image:image>
 		<image:image>
-            <image:loc>https://gd-terrasses.fr/assets/img/propos/terrasse_piscine_travail-2.jpg</image:loc>
-            <image:caption>A focused man skillfully installing exterior uplights on a beautifully designed outdoor swimming pool deck, surrounded by a lush green grass lawn. The uplights will enhance the ambiance of the pool area, providing stylish illumination for evening gatherings and leisure activities.</image:caption>
-            <image:title> Man Installing Exterior Uplights on Outdoor Swimming Pool Deck</image:title>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine-1/terrasse_piscine_1-9.jpeg</image:loc>
+            <image:caption>A close-up view of an elegant outdoor terrace by a sparkling pool, with symmetrical concrete steps leading to the water, creating a peaceful atmosphere for relaxation.</image:caption>
+            <image:title>Elegant outdoor terrace by a pool with symmetrical steps</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://gd-terrasses.fr/assets/img/portfolio/escalier_1/escalier_1-02.jpg</image:loc>
+            <image:caption>Wooden exterior staircase leading to the first floor of a typical Haute Savoie house, with wooden cladding and lush foliage.</image:caption>
+           <image:title>Wooden exterior staircase leading to the first floor of a typical Haute Savoie house, with wooden cladding and lush foliage.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_1/terrasse_1-09.jpg</image:loc>
+           <image:caption>Custom outdoor terrace, beautifully renovated for an elegant outdoor space.</image:caption>
+           <image:title>Custom outdoor terrace, beautifully renovated for an elegant outdoor space.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_2/terrasse_2-01.jpg</image:loc>
+           <image:caption>Exotic wood terrace with discreet fastening using countersunk screws and custom wooden flower pot casing.</image:caption>
+           <image:title>Exotic wood terrace with discreet fastening using countersunk screws and custom wooden flower pot casing.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_3/terrasse_3_back-1.jpg</image:loc>
+           <image:caption>Composite terrace on supports in a garden, designed for an outdoor dining space.</image:caption>
+           <image:title>Composite terrace on supports in a garden, designed for an outdoor dining space.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_piscine_2/terrasse_piscine_2-4.jpg</image:loc>
+           <image:caption>Ipe terrace around a pool, integrated into a lush garden.</image:caption>
+           <image:title>Ipe terrace around a pool, integrated into a lush garden.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_4/terrasse_4-3.jpg</image:loc>
+           <image:caption>New exotic wood decking installed on a renovated structure, combining old-world charm and renewed strength.</image:caption>
+           <image:title>New exotic wood decking installed on a renovated structure, combining old-world charm and renewed strength.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/escalier_2/escalier_2-07.jpg</image:loc>
+           <image:caption>Beautifully designed staircase made of Douglas and Larch wood, offering a rustic yet refined look.</image:caption>
+           <image:title>Beautifully designed staircase made of Douglas and Larch wood, offering a rustic yet refined look.</image:title>
+       </image:image>
+       <image:image>
+           <image:loc>https://gd-terrasses.fr/assets/img/portfolio/terrasse_5/terrasse_5-1.jpg</image:loc>
+           <image:caption>Renovation of the existing terrace for an improved outdoor space.</image:caption>
+           <image:title>Renovation of the existing terrace for an improved outdoor space.</image:title>
+       </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Creation Guide (French) -->
     <url>
         <loc>https://www.gd-terrasses.fr/creation-guide</loc>
         <image:image>
@@ -124,7 +164,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Creation Guide (English)-->
     <url>
         <loc>https://www.gd-terrasses.fr/creation-guide-en</loc>
         <image:image>
@@ -134,7 +174,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Maintenance Guide (French) -->
     <url>
         <loc>https://www.gd-terrasses.fr/entretien-guide</loc>
         <image:image>
@@ -144,7 +184,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Maintenance Guide (English) -->
     <url>
         <loc>https://www.gd-terrasses.fr/entretien-guide-en</loc>
         <image:image>
@@ -154,7 +194,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Renovation Guide (French) -->
     <url>
         <loc>https://www.gd-terrasses.fr/renovation-guide</loc>
         <image:image>
@@ -164,7 +204,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Renovation Guide (English) -->
     <url>
         <loc>https://www.gd-terrasses.fr/renovation-guide-en</loc>
         <image:image>
@@ -174,7 +214,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Portfolio (French) -->
     <url>
         <loc>https://www.gd-terrasses.fr/portfolio</loc>
         <image:image>
@@ -184,7 +224,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Portfolio (English) -->
     <url>
         <loc>https://www.gd-terrasses.fr/portfolio-en</loc>
         <image:image>
@@ -194,7 +234,7 @@
         </image:image>
     </url>
 	
-	<!-- URL Entry for Page 2 -->
+	<!-- URL Entry for Portfolio Page 1 - Stairs 1 -->
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-escalier-1</loc>
         <image:image>
@@ -204,7 +244,7 @@
         </image:image>
     </url>
 
-    <!-- Repeat for all other pages -->
+    <!-- URL Entry for Portfolio Page 2 - Stairs 2 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-escalier-2</loc>
@@ -215,7 +255,7 @@
         </image:image>
     </url>
 
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 3 - Terrace 1 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-1</loc>
@@ -226,7 +266,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 4 - Terrace 2 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-2</loc>
@@ -237,7 +277,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 5 - Terrace 3 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-3</loc>
@@ -248,7 +288,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 6 - Terrace 4 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-4</loc>
@@ -259,7 +299,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 7 - Terrace 5 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-5</loc>
@@ -270,7 +310,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 8 - Terrace/Pool 1 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-piscine-1</loc>
@@ -281,7 +321,7 @@
         </image:image>
     </url>
 	
-	 <!-- Repeat for all other pages -->
+	 <!-- URL Entry for Portfolio Page 9 - Terrace/Pool 2 -->
     
     <url>
         <loc>https://www.gd-terrasses.fr/galerie-terrasse-piscine-2</loc>
